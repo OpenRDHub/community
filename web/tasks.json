@@ -1,0 +1,121 @@
+[
+  {
+    "id": "C01",
+    "title": "检查三个参与入口与首页导航",
+    "category": "导航",
+    "result": "一份失效或不清楚的链接清单，以及对应修改建议。",
+    "scope": "从组织首页分别走到参与、需求和资源入口；记录哪里不知道下一步。",
+    "refs": [
+      "../../.github/profile/README.md",
+      "../docs/getting-started.md"
+    ],
+    "status": "待确认接待人",
+    "source": "community/tasks/C01.md",
+    "en": {
+      "title": "Check the three participation routes and homepage navigation",
+      "category": "Navigation",
+      "result": "A list of broken or unclear links with proposed fixes.",
+      "scope": "Follow the contribution, needs, and support routes from the organization homepage. Record where the next step is unclear.",
+      "status": "Contact to be confirmed"
+    }
+  },
+  {
+    "id": "C02",
+    "title": "把参与指南读一遍，补齐新人会问的问题",
+    "category": "文档",
+    "result": "一版更容易照做的参与说明，附修改理由。",
+    "scope": "用第一次来社区的视角检查称呼、步骤和资料；保留不同专业的参与方法。",
+    "refs": [
+      "../docs/getting-started.md",
+      "../CONTRIBUTING.md"
+    ],
+    "status": "待确认接待人",
+    "source": "community/tasks/C02.md",
+    "en": {
+      "title": "Improve the participation guide from a newcomer’s perspective",
+      "category": "Documentation",
+      "result": "Clearer participation instructions with reasons for the changes.",
+      "scope": "Check terminology, steps, and references as a first-time visitor. Preserve routes for different professional backgrounds.",
+      "status": "Contact to be confirmed"
+    }
+  },
+  {
+    "id": "C03",
+    "title": "为历史黑客松手册整理一页索引",
+    "category": "资料",
+    "result": "按准备、开展、后续整理分组的原件链接。",
+    "scope": "复用既有 SOP；记录资料适用场景与待确认处，不复制整套手册。",
+    "refs": [
+      "https://github.com/OpenRDHub/rare-disease-gene-hackathon-sop",
+      "../docs/projects.md"
+    ],
+    "status": "待确认接待人",
+    "source": "community/tasks/C03.md",
+    "en": {
+      "title": "Create a one-page index of past hackathon handbooks",
+      "category": "References",
+      "result": "Links to original materials grouped by preparation, delivery, and follow-up.",
+      "scope": "Reuse the existing SOP, describe when materials apply, and flag uncertainties. Do not duplicate the whole handbook.",
+      "status": "Contact to be confirmed"
+    }
+  },
+  {
+    "id": "C04",
+    "title": "试填需求模板，检查是否容易理解",
+    "category": "体验",
+    "result": "一次使用虚构情境的试填记录和字段改进建议。",
+    "scope": "检查哪些问题难以回答、哪些信息不适合公开；不使用真实患者资料。",
+    "refs": [
+      "../docs/needs.md"
+    ],
+    "status": "待确认接待人",
+    "source": "community/tasks/C04.md",
+    "en": {
+      "title": "Try the needs template and check whether it is easy to use",
+      "category": "Usability",
+      "result": "A trial using a fictional situation and suggestions for the fields.",
+      "scope": "Check which questions are difficult and which information should not be public. Do not use real patient data.",
+      "status": "Contact to be confirmed"
+    }
+  },
+  {
+    "id": "C05",
+    "title": "整理社区常见问题的第一版",
+    "category": "文档",
+    "result": "按参与、协作和贡献认可分类的简短问答。",
+    "scope": "优先整理现有说明已能回答的问题；未知事实标为待确认，不编造联系人。",
+    "refs": [
+      "../GOVERNANCE.md",
+      "../MEMBERSHIP.md"
+    ],
+    "status": "待确认接待人",
+    "source": "community/tasks/C05.md",
+    "en": {
+      "title": "Prepare the first community FAQ",
+      "category": "Documentation",
+      "result": "Short questions and answers about participation, collaboration, and recognition.",
+      "scope": "Start with questions the existing guides can answer. Flag unknown facts and do not invent contact people.",
+      "status": "Contact to be confirmed"
+    }
+  },
+  {
+    "id": "C06",
+    "title": "设计资源信息核验与更新的方法",
+    "category": "运营",
+    "result": "一份资源条目示例和核验检查清单。",
+    "scope": "明确提供条件、有效期与兑现记录；示例与已确认资源分开。",
+    "refs": [
+      "../docs/resources.md",
+      "../MAINTAINERS.md"
+    ],
+    "status": "待确认接待人",
+    "source": "community/tasks/C06.md",
+    "en": {
+      "title": "Define how to verify and update resource information",
+      "category": "Operations",
+      "result": "An example resource record and a verification checklist.",
+      "scope": "Clarify conditions, expiry, and delivery records. Keep examples separate from confirmed resources.",
+      "status": "Contact to be confirmed"
+    }
+  }
+]

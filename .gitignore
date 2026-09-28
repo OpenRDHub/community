@@ -1,0 +1,7 @@
+web/node_modules/
+web/site/
+web/site.tmp-*/
+web/page-manifest.json
+.venv/
+__pycache__/
+.DS_Store

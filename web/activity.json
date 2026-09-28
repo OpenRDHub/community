@@ -1,0 +1,61 @@
+{
+  "verified_on": "2026-09-28",
+  "scope": "Public open items; not a configured GitHub Project",
+  "items": [
+    {
+      "repository": "OpenRDHub/OpenRD-CollabPlat",
+      "number": 54,
+      "title": "fix: route personal settings menus to profile (B14)",
+      "url": "https://github.com/OpenRDHub/OpenRD-CollabPlat/pull/54",
+      "type": "pr",
+      "state": "open",
+      "draft": false,
+      "base": "develop",
+      "assignees": []
+    },
+    {
+      "repository": "OpenRDHub/OpenRD-CollabPlat",
+      "number": 37,
+      "title": "build: 添加前后端生产 Docker 镜像",
+      "url": "https://github.com/OpenRDHub/OpenRD-CollabPlat/pull/37",
+      "type": "pr",
+      "state": "open",
+      "draft": false,
+      "base": "develop",
+      "assignees": []
+    },
+    {
+      "repository": "OpenRDHub/OpenRD-CollabPlat",
+      "number": 32,
+      "title": "用户登入界面显示问题",
+      "url": "https://github.com/OpenRDHub/OpenRD-CollabPlat/issues/32",
+      "type": "issue",
+      "state": "open",
+      "draft": false,
+      "base": null,
+      "assignees": []
+    },
+    {
+      "repository": "OpenRDHub/rare-disease-gene-hackathon-sop",
+      "number": 1,
+      "title": "refactor: 优化项目文档结构与内容组织",
+      "url": "https://github.com/OpenRDHub/rare-disease-gene-hackathon-sop/pull/1",
+      "type": "pr",
+      "state": "open",
+      "draft": false,
+      "base": "main",
+      "assignees": []
+    },
+    {
+      "repository": "OpenRDHub/sjia-mas-early-warning-platform",
+      "number": 1,
+      "title": "feat: RareGuard（守望）sJIA→MAS 家庭动态预警平台可运行提交",
+      "url": "https://github.com/OpenRDHub/sjia-mas-early-warning-platform/pull/1",
+      "type": "pr",
+      "state": "open",
+      "draft": false,
+      "base": "main",
+      "assignees": []
+    }
+  ]
+}
