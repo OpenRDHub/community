@@ -7,7 +7,7 @@
 - 已知项目的问题或功能：在该项目约定的 Issue 入口提出，PR 发到接收改动的仓库。
 - OpenRare：组织内为 fork，目前使用 [上游反馈入口](https://github.com/OpenRare2026/OpenRare/issues)。
 - 尚未归属项目的需求：现有入口是个人账号下的 [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues)。接待沿用社区现有联络方式，尚未承诺统一响应时间。
-- 社区公共文档：私有 community 仅获授权人员可访问；若已在社区微信群或认识联络人，可请其协助联系管理员；统一公开接待人仍待确认。
+- 社区公共文档：到公开的 [community](https://github.com/OpenRDHub/community) 查阅说明，通过 Issue、PR 或 Discussions 参与；接待人和反馈安排仍待确认。
 - 组织主页和默认规则：在 [.github](https://github.com/OpenRDHub/.github) 提交修改，不把普通项目问题送到这里。
 
 ## 提交修改

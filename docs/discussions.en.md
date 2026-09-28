@@ -2,7 +2,7 @@
 
 # Community discussions
 
-[Repository Discussions](https://github.com/OpenRDHub/community/discussions) is enabled and private with the repository. Organization Discussions is not configured; the repository forum is not an open organization-wide entry point.
+[Repository Discussions](https://github.com/OpenRDHub/community/discussions) is enabled and public with the repository. Anyone can read it and signed-in GitHub users can participate. Organization Discussions is not configured; use the community repository forum.
 
 | GitHub category | Purpose | When to create a task |
 |---|---|---|

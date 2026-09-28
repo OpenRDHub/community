@@ -8,7 +8,7 @@ summary: Links to the current profile, hackathon SOP, needs intake, and collabor
 date: '2026-09-28'
 updated: '2026-09-28'
 status: draft
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -31,6 +31,6 @@ Connect existing materials before deciding what needs to move into community.
 | Existing needs intake | [rare-disease-list Issues](https://github.com/Khub-OpenRD/rare-disease-list/issues) | Keep the entry point until any migration has a clear destination |
 | Collaboration platform | [OpenRD-CollabPlat](https://github.com/OpenRDHub/OpenRD-CollabPlat) | Preserve the platform; the first records website does not depend on changing it |
 
-[Full repository directory and README mapping](../projects.en.md): all 12 verified repositories, with the proposed community repository identified separately.
+[Full repository directory and README mapping](../projects.en.md): all 13 verified public repositories, including the public community repository.
 
 This entry registers sources. It does not mirror entire repositories or claim that unspecified Feishu documents have been archived.

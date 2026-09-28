@@ -23,9 +23,9 @@
 
 </div>
 
-<p align="center"><a href="https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.md">公开参与说明</a> · <a href="https://github.com/OpenRDHub/community/blob/main/README.md">成员协作资料（需权限）</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">查阅社区资料（需权限）</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">资料归档与运营方案（需权限）</a></p>
+<p align="center"><a href="https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.md">公开参与说明</a> · <a href="https://github.com/OpenRDHub/community/blob/main/README.md">社区协作资料</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">查阅社区资料</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">资料归档与运营方案</a></p>
 
-<p><b>协作入口：</b>当前组织是 OpenRDHub；Khub-OpenRD/rare-disease-list 是个人账号下的既有需求入口，分拣安排待确认。OpenRare 上游贡献仍进入 OpenRare2026/OpenRare。community 已创建为 PRIVATE，外部访客需使用可访问的公开入口。<a href="https://github.com/OpenRDHub/community/blob/main/docs/routing.md">入口归属表（需权限）</a>。</p>
+<p><b>协作入口：</b>当前组织是 OpenRDHub；Khub-OpenRD/rare-disease-list 是个人账号下的既有需求入口，分拣安排待确认。OpenRare 上游贡献仍进入 OpenRare2026/OpenRare。community 已公开，可通过 Issues、PR 和 Discussions 参与社区协作。<a href="https://github.com/OpenRDHub/community/blob/main/docs/routing.md">入口归属表</a>。</p>
 
 <h2 align="center">Who We Are</h2>
 
@@ -88,7 +88,7 @@ Khub团队 成立于 2024 年，并于 2025 年 9 月发起 OpenRD 罕见病开�
   </tr>
   <tr>
     <td align="center"><b>想参与社区建设？</b></td>
-    <td align="center">从 <a href="https://github.com/OpenRDHub/community/blob/main/docs/getting-started.md">community 参与指南（需权限）</a> 了解文档、资料整理、运营和社区协作的参与方式。</td>
+    <td align="center">从 <a href="https://github.com/OpenRDHub/community/blob/main/docs/getting-started.md">community 参与指南</a> 了解文档、资料整理、运营和社区协作的参与方式。</td>
   </tr>
   <tr>
     <td align="center"><b>想合作支持？</b></td>
@@ -102,7 +102,7 @@ Khub团队 成立于 2024 年，并于 2025 年 9 月发起 OpenRD 罕见病开�
 
 <table><tr><th>我想了解</th><th>从这里进入</th></tr><tr><td>会议、讨论和资料最近有什么变化</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">社区资料中心</a></td></tr><tr><td>怎样整理一份记录并同步到 GitHub</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/record-policy.md">收录与维护约定</a></td></tr><tr><td>这套分工怎么运行、先做什么</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">查看完整方案草稿</a></td></tr></table>
 
-<p><sub>community 已建立为私有仓库，以上资料入口均需访问权限；本主页更新稿尚待合入。原有需求入口与项目链接继续保留。</sub></p>
+<p><sub>community 已公开，以上资料入口可直接访问；本主页更新稿尚待合入。原有需求入口与项目链接继续保留。</sub></p>
 
 <h2 align="center">Featured Project</h2>
 
@@ -178,7 +178,7 @@ Khub团队 成立于 2024 年，并于 2025 年 9 月发起 OpenRD 罕见病开�
   </tr>
 </table>
 
-<p>查看 <a href="https://github.com/orgs/OpenRDHub/repositories">组织现有仓库</a>，或查阅 <a href="https://github.com/OpenRDHub/community/blob/main/docs/projects.md">项目与仓库对应目录</a>（私有仓库，需访问权限）。项目介绍与仓库目录分别维护，已核验关系见对应说明。</p>
+<p>查看 <a href="https://github.com/orgs/OpenRDHub/repositories">组织现有仓库</a>，或查阅 <a href="https://github.com/OpenRDHub/community/blob/main/docs/projects.md">项目与仓库对应目录</a>。项目介绍与仓库目录分别维护，已核验关系见对应说明。</p>
 
 <h2 align="center">How It Works</h2>
 

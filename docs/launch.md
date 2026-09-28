@@ -6,9 +6,9 @@
 
 | 已完成 | 入口与当前状态 |
 |---|---|
-| community 文档、贡献说明与模板 | 已进入私有仓库，角色与治理草案仍待复核 |
+| community 文档、贡献说明与模板 | 已进入公开仓库，角色与治理草案仍待复核 |
 | 六个建设事项 | [Issue #3–#8](https://github.com/OpenRDHub/community/issues?q=is%3Aissue%20is%3Aopen%20label%3Acommunity-task)，未指派 |
-| 社区看板 | [Project #1](https://github.com/orgs/OpenRDHub/projects/1)，私有；组织成员可读写看板，原 Issue 仍受仓库权限约束；六项均为待确认 |
+| 社区看板 | [Project #1](https://github.com/orgs/OpenRDHub/projects/1)，私有；组织成员可读写看板，原 Issue 可公开阅读，编辑与管理仍受仓库权限约束；六项均为待确认 |
 | 仓库讨论区 | 已启用；[试行讨论 #9](https://github.com/OpenRDHub/community/discussions/9)征求分工与公开范围意见 |
 | 中英文网页预览 | 从仓库文档生成；显示真实事项入口与核验快照，未公开部署 |
 
@@ -18,7 +18,7 @@
 
 1. **接待和评审**：在原 Issue 确认参与人、答疑人、评审人、产出和下次检查时间，再开放认领。不预设其他人的投入。
 2. **主页修改**：mattheliu 对 `.github` 仍只有读权限。已有修改包需要有写权限的维护者应用；公开主页当前保留原版。
-3. **公开接待**：community 与看板目前为私有；确定面向外部的入口、可公开文档与维护者后，再单独实施公开配置。组织级 Discussions 尚未配置。
+3. **公开接待**：community 及其 Issues、PR、Discussions 已按用户指示公开，可直接参与；接待人和反馈安排仍待确认。看板仍为私有，组织级 Discussions 尚未配置。
 4. **资料收录**：选择一份真实的会议纪要或微信群主题整理稿，确认来源、复核人和可见范围，再按模板发 PR。目前没有导入微信或飞书原文。
 5. **跑完一项工作**：从六个事项中选一项完成认领、交付、反馈、署名与交接，按真实体验修正规则。具体时间由参与者约定。
 

@@ -8,7 +8,7 @@ summary: How to maintain record status, source revisions, authority, and follow-
 date: '2026-09-28'
 updated: '2026-09-28'
 status: draft
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -58,11 +58,13 @@ Draft, awaiting review, reviewed, and superseded describe the record. Whether a 
 - When a WeChat discussion has no shareable original link, record a group alias, date range, and contact role. Keep necessary excerpts or screenshots restricted for review; do not invent links.
 - After review, post the summary link and open questions back to the original group. Add follow-ups to the same record.
 
+community is a public repository. Submit only summaries approved for public sharing; keep internal originals in a restricted location. The `visibility` and `publication` fields describe records and website publication, not access control for GitHub files or history.
+
 ## Contributions
 
 People without Git can give an edited draft to an intake contact. People using Git can open a PR from a template. Credit remains with the actual contributors. A weekly digest can link newly added, updated, and pending records.
 
-Templates and examples are stored in the private community repository; policies remain subject to community review. There is no live source-material import queue, scheduled synchronization, or assigned records contact.
+Templates and examples are stored in the public community repository; policies remain subject to community review. There is no live source-material import queue, scheduled synchronization, or assigned records contact.
 
 ## Template ingestion and validation
 

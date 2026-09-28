@@ -7,7 +7,7 @@ summary: 微信群、飞书、GitHub 与资料网页的分工，以及两周试�
 date: '2026-09-28'
 updated: '2026-09-28'
 status: draft
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -85,7 +85,7 @@ OpenRDHub/.github
   profile/README.md            # 组织门面与导航
   profile/README.en.md
 
-OpenRDHub/community            # 拟建时显式 PRIVATE
+OpenRDHub/community            # 2026-09-28 按用户指示改为 PUBLIC
   README.md                    # 怎么参与、信息在哪里
   docs/knowledge/              # 资料中心说明与维护约定
   records/
@@ -108,9 +108,9 @@ OpenRDHub/community            # 拟建时显式 PRIVATE
 
 “保存到 GitHub”不等于“全部公开”。微信群聊天原文保留在原沟通范围内；确需保存的摘录和附件按约定放入受限文档。身份资料和未获准公开的患者材料继续放有权限控制的位置；需要 Git 备份的内部文档另放受限仓库。不能用公开仓库里的 `internal/` 文件夹或网页隐藏按钮隔离权限。
 
-新建 community 按现有约定明确设为 PRIVATE。未来是否公开该仓库、哪些资料可发布，分别决定。公开构建只取**已审阅且明确允许发布**的文档和附件；页面、搜索索引、raw 下载与 ZIP 一起过滤，不能只在页面上隐藏。
+community 已按用户明确指示改为 PUBLIC，仓库文件和历史可公开访问；内部原文应留在独立的受限位置。资料的网页发布状态另行维护，不改变 GitHub 的公开可见性。公开构建只取**已审阅且明确允许发布**的文档和附件；页面、搜索索引、raw 下载与 ZIP 一起过滤，不能只在页面上隐藏。
 
-GitHub Pages 可从仓库构建静态网站，但私有仓库不自动意味着网页私有。私有 Pages 的访问控制有 GitHub Enterprise Cloud 条件。第一阶段保留本地预览和私有仓库阅读；需要公开入口时，仅发布允许公开的材料，托管方式再按组织套餐选择。[GitHub Pages 说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [Pages 访问控制](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)
+GitHub Pages 可从仓库构建静态网站，但私有仓库不自动意味着网页私有。私有 Pages 的访问控制有 GitHub Enterprise Cloud 条件。当前可直接阅读公开仓库，网页仍为本地预览；部署网站时仅发布允许进入网页的材料，托管方式再按组织套餐选择。[GitHub Pages 说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [Pages 访问控制](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)
 
 ## 八、先试两周，再决定自动化
 

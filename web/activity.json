@@ -1,6 +1,6 @@
 {
   "verified_on": "2026-09-28",
-  "scope": "Verified snapshots of organization public items and private community PRs; the live community Project is linked separately",
+  "scope": "Verified snapshots of public organization items and community PRs; the private community Project is linked separately",
   "items": [
     {
       "repository": "OpenRDHub/OpenRD-CollabPlat",
@@ -73,6 +73,17 @@
       "number": 10,
       "title": "接通社区试行的真实事项、讨论区与看板",
       "url": "https://github.com/OpenRDHub/community/pull/10",
+      "type": "pr",
+      "state": "merged",
+      "draft": false,
+      "base": "main",
+      "assignees": []
+    },
+    {
+      "repository": "OpenRDHub/community",
+      "number": 11,
+      "title": "修复社区参与入口并交付主页修改包",
+      "url": "https://github.com/OpenRDHub/community/pull/11",
       "type": "pr",
       "state": "merged",
       "draft": false,

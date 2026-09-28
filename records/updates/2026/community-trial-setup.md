@@ -7,7 +7,7 @@ summary: 启用私有讨论区，登记六个真实 Issue，配置社区看板�
 date: '2026-09-28'
 updated: '2026-09-28'
 status: pending-review
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -33,3 +33,6 @@ source_revision: community-trial-2026-09-28-v1
 - [PR #10](https://github.com/OpenRDHub/community/pull/10) 已合入 `main`，合并提交 `9d7027859801848ea3b307375a5cd905babf004f`。
 - 中英文共 96 个页面构建通过；本地链接、真实 GitHub 入口、资料元数据和失败构建保护校验通过。
 - 此合并表示文档与页面更新完成，不代表六项任务完成或社区分工已经达成共识。
+
+
+后续更新（2026-09-28）：community 仓库及 Discussions 已按用户指示公开；本文保留当时的创建过程，看板仍为私有。

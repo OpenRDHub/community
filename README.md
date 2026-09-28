@@ -38,7 +38,7 @@
 
 [贡献与成长](MEMBERSHIP.md) · [日常如何协作](docs/working-together.md)
 
-> community、讨论区与看板均为私有。六个事项已登记，尚待确认接待与评审；角色和规则仍待社区讨论，不代表已经指派或通过。
+> community 及其 Issues、PR、Discussions 已公开；社区看板仍为私有。六个事项已登记，尚待确认接待与评审；角色和规则仍待社区讨论，不代表已经指派或通过。
 
 ## 过程资料也在这里维护
 
@@ -50,6 +50,6 @@
 
 [入口归属表](docs/routing.md) · [工作记录与试行](docs/pilot.md)
 
-项目实现 Issue/PR 留在项目仓库；community 维护公共事务及索引，私有资料仅供获授权人员访问。
+项目实现 Issue/PR 留在项目仓库；community 公开维护公共事务及索引；未获准公开的原始资料保留在独立的受限位置。
 
 [真实事项](https://github.com/OpenRDHub/community/issues) · [社区看板](https://github.com/orgs/OpenRDHub/projects/1) · [本轮征求意见](https://github.com/OpenRDHub/community/discussions/9) · [试行状态与待落实事项](docs/launch.md)
