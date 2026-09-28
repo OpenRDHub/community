@@ -19,3 +19,7 @@ This iteration uses the real technical task of repairing routes and record inges
 A participant records confirmed points and open questions. Create a decision record only for a confirmed decision. Once someone accepts a community task, use one Issue and a documentation PR and link the result back. Candidate work is not an assignment.
 
 No WeChat or Feishu content has been imported and no group message is sent.
+
+## Verified remote result
+
+community is PRIVATE. PR #2 is merged into main and Issue #1 is automatically closed. Merging archives this implementation and draft materials; it does not replace community discussion of rules or roles.

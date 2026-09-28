@@ -4,5 +4,8 @@
   "profile_write_access": false,
   "issue_url": "https://github.com/OpenRDHub/community/issues/1",
   "pr_url": "https://github.com/OpenRDHub/community/pull/2",
-  "repository_url": "https://github.com/OpenRDHub/community"
+  "repository_url": "https://github.com/OpenRDHub/community",
+  "pr_state": "merged",
+  "issue_state": "closed",
+  "merge_commit": "28a9a2eae730e16a71939a0bdbef307635c95788"
 }

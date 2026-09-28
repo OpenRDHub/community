@@ -56,6 +56,17 @@
       "draft": false,
       "base": "main",
       "assignees": []
+    },
+    {
+      "repository": "OpenRDHub/community",
+      "number": 2,
+      "title": "完善社区入口与过程资料收录",
+      "url": "https://github.com/OpenRDHub/community/pull/2",
+      "type": "pr",
+      "state": "merged",
+      "draft": false,
+      "base": "main",
+      "assignees": []
     }
   ]
 }
