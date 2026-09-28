@@ -12,6 +12,8 @@ Verified 2026-09-28. This phase covers community operations; project development
 | Repository Discussions | Enabled; [trial discussion #9](https://github.com/OpenRDHub/community/discussions/9) asks for feedback on responsibilities and access |
 | Bilingual website preview | Built from repository documents with real entry points and dated snapshots; not publicly deployed |
 
+The documentation and preview updates were merged into `main` through [PR #10](https://github.com/OpenRDHub/community/pull/10). Bilingual builds, link checks and record validation passed.
+
 ## Arrangements for actual participants
 
 1. Confirm contributor, support, reviewer, output, and next check-in on the original Issue before marking it Ready.

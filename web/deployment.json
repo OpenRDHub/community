@@ -13,5 +13,8 @@
   "discussions_enabled": true,
   "discussion_url": "https://github.com/OpenRDHub/community/discussions/9",
   "verified_on": "2026-09-28",
-  "project_base_role": "write"
+  "project_base_role": "write",
+  "trial_pr_url": "https://github.com/OpenRDHub/community/pull/10",
+  "trial_pr_state": "merged",
+  "trial_merge_commit": "9d7027859801848ea3b307375a5cd905babf004f"
 }
