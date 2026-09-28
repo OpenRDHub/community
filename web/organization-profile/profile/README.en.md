@@ -72,7 +72,7 @@ Rare Disease Agent is an open-source genetic analysis system for rare disease di
 | Open data | Rare disease database: patient-contributed, de-identified materials for research collaboration | In development |
 | Capacity building | AI for rare disease learning program: knowledge bases, educational websites, comics, videos, and small tools | Running; 400+ learners |
 
-Browse the [existing organization repositories](https://github.com/orgs/OpenRDHub/repositories) or the [project-to-repository mapping](https://github.com/OpenRDHub/community/blob/main/docs/projects.en.md) (local draft). Project descriptions and repository listings serve different purposes; verified relationships are documented in the mapping.
+Browse the [existing organization repositories](https://github.com/orgs/OpenRDHub/repositories) or the [project-to-repository mapping](https://github.com/OpenRDHub/community/blob/main/docs/projects.en.md) (private repository; access required). Project descriptions and repository listings serve different purposes; verified relationships are documented in the mapping.
 
 ## How It Works
 

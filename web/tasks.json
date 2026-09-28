@@ -17,7 +17,12 @@
       "result": "A list of broken or unclear links with proposed fixes.",
       "scope": "Follow the contribution, needs, and support routes from the organization homepage. Record where the next step is unclear.",
       "status": "Contact to be confirmed"
-    }
+    },
+    "issue_url": "https://github.com/OpenRDHub/community/issues/3",
+    "issue_number": 3,
+    "project_status": "triage",
+    "verified_on": "2026-09-28",
+    "assignees": []
   },
   {
     "id": "C02",
@@ -37,7 +42,12 @@
       "result": "Clearer participation instructions with reasons for the changes.",
       "scope": "Check terminology, steps, and references as a first-time visitor. Preserve routes for different professional backgrounds.",
       "status": "Contact to be confirmed"
-    }
+    },
+    "issue_url": "https://github.com/OpenRDHub/community/issues/4",
+    "issue_number": 4,
+    "project_status": "triage",
+    "verified_on": "2026-09-28",
+    "assignees": []
   },
   {
     "id": "C03",
@@ -57,7 +67,12 @@
       "result": "Links to original materials grouped by preparation, delivery, and follow-up.",
       "scope": "Reuse the existing SOP, describe when materials apply, and flag uncertainties. Do not duplicate the whole handbook.",
       "status": "Contact to be confirmed"
-    }
+    },
+    "issue_url": "https://github.com/OpenRDHub/community/issues/5",
+    "issue_number": 5,
+    "project_status": "triage",
+    "verified_on": "2026-09-28",
+    "assignees": []
   },
   {
     "id": "C04",
@@ -76,7 +91,12 @@
       "result": "A trial using a fictional situation and suggestions for the fields.",
       "scope": "Check which questions are difficult and which information should not be public. Do not use real patient data.",
       "status": "Contact to be confirmed"
-    }
+    },
+    "issue_url": "https://github.com/OpenRDHub/community/issues/6",
+    "issue_number": 6,
+    "project_status": "triage",
+    "verified_on": "2026-09-28",
+    "assignees": []
   },
   {
     "id": "C05",
@@ -96,7 +116,12 @@
       "result": "Short questions and answers about participation, collaboration, and recognition.",
       "scope": "Start with questions the existing guides can answer. Flag unknown facts and do not invent contact people.",
       "status": "Contact to be confirmed"
-    }
+    },
+    "issue_url": "https://github.com/OpenRDHub/community/issues/7",
+    "issue_number": 7,
+    "project_status": "triage",
+    "verified_on": "2026-09-28",
+    "assignees": []
   },
   {
     "id": "C06",
@@ -116,6 +141,11 @@
       "result": "An example resource record and a verification checklist.",
       "scope": "Clarify conditions, expiry, and delivery records. Keep examples separate from confirmed resources.",
       "status": "Contact to be confirmed"
-    }
+    },
+    "issue_url": "https://github.com/OpenRDHub/community/issues/8",
+    "issue_number": 8,
+    "project_status": "triage",
+    "verified_on": "2026-09-28",
+    "assignees": []
   }
 ]

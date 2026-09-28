@@ -62,7 +62,7 @@ Draft, awaiting review, reviewed, and superseded describe the record. Whether a 
 
 People without Git can give an edited draft to an intake contact. People using Git can open a PR from a template. Credit remains with the actual contributors. A weekly digest can link newly added, updated, and pending records.
 
-Templates and examples in this local proposal do not represent a live import queue, scheduled synchronization, or assigned maintainers.
+Templates and examples are stored in the private community repository; policies remain subject to community review. There is no live source-material import queue, scheduled synchronization, or assigned records contact.
 
 ## Template ingestion and validation
 

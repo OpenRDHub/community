@@ -7,5 +7,11 @@
   "repository_url": "https://github.com/OpenRDHub/community",
   "pr_state": "merged",
   "issue_state": "closed",
-  "merge_commit": "28a9a2eae730e16a71939a0bdbef307635c95788"
+  "merge_commit": "28a9a2eae730e16a71939a0bdbef307635c95788",
+  "project_url": "https://github.com/orgs/OpenRDHub/projects/1",
+  "project_visibility": "private",
+  "discussions_enabled": true,
+  "discussion_url": "https://github.com/OpenRDHub/community/discussions/9",
+  "verified_on": "2026-09-28",
+  "project_base_role": "write"
 }

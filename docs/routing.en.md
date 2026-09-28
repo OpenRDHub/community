@@ -12,8 +12,8 @@ Verified on 2026-09-28. Choose the handling location by the work involved. A mai
 | Needs without a project | [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues) | The selected project | Existing personal-account intake; continued ownership and triage remain to be confirmed. |
 | A known project's bug or feature | [Project directory](projects.en.md) | That project | Follow its guidance; do not duplicate tasks in community. |
 | OpenRare upstream work | [Upstream Issues](https://github.com/OpenRare2026/OpenRare/issues) / [PRs](https://github.com/OpenRare2026/OpenRare/pulls) | OpenRare2026/OpenRare | Public upstream; Issues are disabled in the organization fork. |
-| Organization-wide work | [Organization Projects](https://github.com/orgs/OpenRDHub/projects) | Original repositories | No shared board is confirmed. The local view is a snapshot of open public items. |
-| Open-ended discussion | [Category proposal](discussions.en.md) | The document's repository | Organization Discussions is not configured; agree on the source repository and audience first. |
+| Organization-wide work | [Organization Projects](https://github.com/orgs/OpenRDHub/projects) | Original repositories | A [private community board](https://github.com/orgs/OpenRDHub/projects/1) now tracks community work. The local organization view remains a snapshot of public items. |
+| Open-ended discussion | [Repository discussions](discussions.en.md) | The document's repository | Repository Discussions is enabled and private. Organization Discussions still needs an agreed source repository and audience. |
 
 ## Relating Issues and PRs
 

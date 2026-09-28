@@ -26,7 +26,7 @@
 
 - **文档**：稳定的说明、目录和规则。
 - **Issues**：有明确下一步的社区事项、需求和资源登记。
-- **Discussions**：问答、经验与开放想法。[查看分类草案](docs/discussions.md)。
+- **Discussions**：问答、经验与开放想法。[查看讨论分类](docs/discussions.md)。
 - **PR**：需要审阅的文档、目录和模板修改。
 - **项目仓库**：具体项目的实现与交付；这里保留[项目导航](docs/projects.md)。
 
@@ -38,7 +38,7 @@
 
 [贡献与成长](MEMBERSHIP.md) · [日常如何协作](docs/working-together.md)
 
-> 本地草稿中的人员、讨论分类和候选任务尚未对外发布。实际接待安排见维护分工。
+> community、讨论区与看板均为私有。六个事项已登记，尚待确认接待与评审；角色和规则仍待社区讨论，不代表已经指派或通过。
 
 ## 过程资料也在这里维护
 
@@ -51,3 +51,5 @@
 [入口归属表](docs/routing.md) · [工作记录与试行](docs/pilot.md)
 
 项目实现 Issue/PR 留在项目仓库；community 维护公共事务及索引，私有资料仅供获授权人员访问。
+
+[真实事项](https://github.com/OpenRDHub/community/issues) · [社区看板](https://github.com/orgs/OpenRDHub/projects/1) · [本轮征求意见](https://github.com/OpenRDHub/community/discussions/9) · [试行状态与待落实事项](docs/launch.md)

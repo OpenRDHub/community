@@ -2,21 +2,23 @@
 
 # Community discussions
 
-We propose keeping shared discussions in community. The categories below are drafts and have not been created on GitHub.
+[Repository Discussions](https://github.com/OpenRDHub/community/discussions) is enabled and private with the repository. Organization Discussions is not configured; the repository forum is not an open organization-wide entry point.
 
-| Category | What belongs here | When to create a task |
+| GitHub category | Purpose | When to create a task |
 |---|---|---|
-| Questions and introductions | Participation, finding materials, and difficulties | Link a community item when instructions need a change |
-| Experience and resources | Practical methods, references, and retrospectives | Create an editing task when material should become a stable guide |
-| Community proposals | Participation rules, responsibilities, and collaboration | Create an actionable item after scope and responsibility are clear |
-| Announcements and updates | Confirmed decisions, actual outcomes, and next steps | Link directly to the original tasks and documents |
+| [Q&A](https://github.com/OpenRDHub/community/discussions/categories/q-a) | Participation questions and difficulties | Link an Issue when guidance needs changing |
+| [General](https://github.com/OpenRDHub/community/discussions/categories/general) | Experiences, references and retrospectives | Create an editing task for reusable guidance |
+| [Ideas](https://github.com/OpenRDHub/community/discussions/categories/ideas) | Responsibilities and collaboration proposals | Create an execution item once scope and ownership are clear |
+| [Announcements](https://github.com/OpenRDHub/community/discussions/categories/announcements) | Confirmed decisions and actual outcomes | Link original tasks and documents |
 
-## Discussion expectations
+The default Polls and Show and tell categories remain available when useful.
 
-Use a specific title and include relevant context. Explain the impact of different options. Nobody needs to reveal personal experiences or identity to justify a view.
+## Current discussion
 
-For decisions, name an owner and a discussion deadline, and notify affected people. Record the conclusion on the original proposal and use a pull request to update stable rules.
+[Community trial: support, records, and public access](https://github.com/OpenRDHub/community/discussions/9) collects feedback on roles and access. Track each of the six tasks on its original Issue.
 
-A question or proposal is not a delivery commitment. Link an existing task rather than tracking the same work twice.
+## Expectations
+
+Use a specific title and necessary context. Explain the impact of options without requiring personal disclosure. Actual participants agree on decision ownership and timing. Keep conclusions on the original discussion and update stable rules by PR. Proposals are not delivery commitments.
 
 [Governance](../GOVERNANCE.en.md) · [How to contribute](../CONTRIBUTING.en.md)
