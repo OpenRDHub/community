@@ -1,0 +1,65 @@
+{
+  "proposal": {
+    "name": "Community issue or proposal",
+    "about": "Suggest an improvement to shared community work",
+    "fields": [
+      [
+        "context",
+        "What problem would you like to solve?",
+        "Describe a specific situation."
+      ],
+      [
+        "expected",
+        "What outcome would help?",
+        "A change, a document, or a decision to discuss."
+      ],
+      [
+        "extra",
+        "References or how you could help (optional)",
+        "Do not include private contact details."
+      ]
+    ]
+  },
+  "need": {
+    "name": "Share a need",
+    "about": "Describe a difficulty and what you hope to improve",
+    "fields": [
+      [
+        "context",
+        "What is the situation and the difficulty?",
+        "Describe the situation without medical records or identity details."
+      ],
+      [
+        "expected",
+        "What do you do today, and what would help?",
+        "You do not need a complete technical proposal."
+      ],
+      [
+        "extra",
+        "Existing approaches or references (optional)",
+        "Only link to materials suitable for public sharing."
+      ]
+    ]
+  },
+  "resource": {
+    "name": "Resources and support",
+    "about": "Describe specific support you can offer or need",
+    "fields": [
+      [
+        "context",
+        "What support can you offer or do you need?",
+        "Explain the intended use."
+      ],
+      [
+        "expected",
+        "Conditions, amount, or availability",
+        "Clearly mark anything that is not confirmed."
+      ],
+      [
+        "extra",
+        "References and follow-up arrangements (optional)",
+        "Agree on private contact details separately."
+      ]
+    ]
+  }
+}
