@@ -4,7 +4,7 @@
 
 This iteration uses the real technical task of repairing routes and record ingestion, authorized in the current work conversation. It is not a meeting or a commitment from other participants.
 
-[Implementation record — Chinese original](../records/updates/2026/community-route-repair.md) → [Issue #1](https://github.com/OpenRDHub/community/issues/1) → PR (being prepared) → passed: ingestion, language fallback, metadata, links, failed-build preservation and standalone build.
+[Implementation record — Chinese original](../records/updates/2026/community-route-repair.md) → [Issue #1](https://github.com/OpenRDHub/community/issues/1) → [PR #2](https://github.com/OpenRDHub/community/pull/2) → passed: ingestion, language fallback, metadata, links, failed-build preservation and standalone build.
 
 ## Local acceptance
 

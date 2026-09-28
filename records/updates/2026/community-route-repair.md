@@ -35,3 +35,7 @@ source_revision: implementation-2026-09-28-v1
 ## 当前限制
 
 主页修改需有 .github 写权限的维护者应用。发布和接待分工待社区确认；本地网页不承担远端提交或同步。
+
+## 关联工作
+
+[Issue #1](https://github.com/OpenRDHub/community/issues/1) · [PR #2](https://github.com/OpenRDHub/community/pull/2)。同仓处理并建立关闭关联；规则草案的社区复核仍独立进行。

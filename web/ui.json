@@ -211,7 +211,7 @@
     "showExamples": "显示演示记录",
     "libraryLocalNote": "已收录本轮技术工作记录、规划与索引；没有导入微信或飞书原文。演示记录默认隐藏。",
     "example": "示例",
-    "localRecord": "本地草稿",
+    "localRecord": "已收录记录",
     "recordUpdated": "修订",
     "libraryEmpty": "暂时没有这类记录",
     "libraryEmptyHint": "可以查看空白模板，或勾选“显示演示记录”预览写法。",
@@ -251,7 +251,7 @@
     "repoOriginalDescription": "GitHub 未填写描述；组织 README 存放在此仓库。",
     "repoSource": "查看 GitHub 组织列表",
     "repoMapping": "查看 README 项目与仓库对应说明",
-    "repoAll": "查看全部 12 个真实仓库",
+    "repoAll": "查看全部 12 个公开仓库",
     "repoActiveCount": "当前显示",
     "repoOf": "/",
     "repoNavAll": "组织仓库目录",
@@ -287,7 +287,8 @@
     "translationPending": "译文待补；显示原文内容",
     "recordMetadataNotice": "以上状态来自该记录的元信息；收录或 PR 合并不等于提案获通过。网页不执行公开发布或自动同步。",
     "destinationDiscussion": "用途：讨论草稿。实际源仓库尚未配置；当前只生成正文，不会提交为 Issue。",
-    "destinationIssue": "用途：事项草稿。生成后按入口归属表选择 community、项目或上游；当前不向任何仓库提交。"
+    "destinationIssue": "用途：事项草稿。生成后按入口归属表选择 community、项目或上游；当前不向任何仓库提交。",
+    "candidate": "候选"
   },
   "en": {
     "local": "Local preview · Unpublished",
@@ -501,7 +502,7 @@
     "showExamples": "Show illustrative records",
     "libraryLocalNote": "Includes this iteration’s technical record, proposals and indexes. No WeChat or Feishu originals were imported. Illustrations are hidden by default.",
     "example": "Example",
-    "localRecord": "Local draft",
+    "localRecord": "Indexed record",
     "recordUpdated": "Updated",
     "libraryEmpty": "No records of this type yet",
     "libraryEmptyHint": "Read a blank template, or enable illustrative records to preview the format.",
@@ -541,7 +542,7 @@
     "repoOriginalDescription": "No description on GitHub. The organization profile README is stored here.",
     "repoSource": "View organization on GitHub",
     "repoMapping": "README project-to-repository mapping",
-    "repoAll": "View all 12 real repositories",
+    "repoAll": "View all 12 public repositories",
     "repoActiveCount": "Showing",
     "repoOf": "of",
     "repoNavAll": "Organization repositories",
@@ -577,6 +578,7 @@
     "translationPending": "Translation pending; showing the original",
     "recordMetadataNotice": "Metadata comes from this record. Ingestion or merging does not approve a proposal. This page does not publish or synchronize content.",
     "destinationDiscussion": "Destination: discussion draft. A source repository is not configured; this generates text and does not submit an Issue.",
-    "destinationIssue": "Destination: task draft. Use the entry-point map to choose community, a project or upstream; nothing is submitted to a repository."
+    "destinationIssue": "Destination: task draft. Use the entry-point map to choose community, a project or upstream; nothing is submitted to a repository.",
+    "candidate": "candidates"
   }
 }

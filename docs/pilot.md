@@ -4,7 +4,7 @@
 
 以真实的“修复社区入口与记录收录”为技术任务，授权来自本次工作对话；不代表已召开会议或其他人已承诺接待。
 
-[工作记录](../records/updates/2026/community-route-repair.md) → [Issue #1](https://github.com/OpenRDHub/community/issues/1) → PR（准备中） → 验证通过：模板收录、单语回退、元信息、链接、失败保留旧站点、独立仓库构建。
+[工作记录](../records/updates/2026/community-route-repair.md) → [Issue #1](https://github.com/OpenRDHub/community/issues/1) → [PR #2](https://github.com/OpenRDHub/community/pull/2) → 验证通过：模板收录、单语回退、元信息、链接、失败保留旧站点、独立仓库构建。
 
 ## 本地先验收
 
