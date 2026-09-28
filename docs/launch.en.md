@@ -27,3 +27,5 @@ The documentation and preview updates were merged into `main` through [PR #10](h
 Participants can state their interests, availability, support needs, and desired mentoring, credit, evidence of skills, or collaboration opportunities. Resource providers must confirm offers. Record actual support and results without promising payment, jobs, or resources that have not been agreed.
 
 [Roadmap](../ROADMAP.en.md) · [Maintainers](../MAINTAINERS.en.md) · [Discussions](discussions.en.md)
+
+C01 now has a [three-route audit and profile handoff](../records/updates/2026/community-entry-audit.en.md), including repaired document routes and a checked profile patch. Independent review and public-profile rollout remain open.

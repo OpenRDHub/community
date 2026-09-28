@@ -7,7 +7,7 @@
 | 事项 | 当前入口与归属 | PR 接收位置 | 可见范围与接待 |
 |---|---|---|---|
 | 了解组织、修改主页 | [OpenRDHub](https://github.com/OpenRDHub) / [.github](https://github.com/OpenRDHub/.github) | .github | 公开；当前执行账号没有写权限，修改包交有权限维护者处理 |
-| 公共参与说明 | [组织贡献说明草案](https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.md) | .github | 该文件尚待合入；目前从组织主页、现有群联络或项目 README 进入 |
+| 公共参与说明 | [现有组织主页](https://github.com/OpenRDHub) | .github | 公开贡献说明尚待合入，不提供未上线文件的入口；已有权限者可看[社区贡献说明](../CONTRIBUTING.md)。统一对外接待人仍待确认 |
 | 社区指南、纪要、公共事务 | [community 内容](../README.md) | community | 已创建为 PRIVATE；获授权人员使用，外部访客先走公开接待入口；接待人待确认 |
 | 尚未归属项目的真实需求 | [Khub-OpenRD/rare-disease-list Issues](https://github.com/Khub-OpenRD/rare-disease-list/issues) | 依分拣结果进入项目 | 个人账号下的既有公开入口；是否继续作为统一需求池及谁分拣待确认 |
 | 明确属于项目的功能或问题 | [项目目录](projects.md)列出的对应入口 | 该项目仓库 | 以项目当前说明为准；不重复在 community 开同义任务 |

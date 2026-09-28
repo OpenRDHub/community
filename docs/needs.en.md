@@ -4,6 +4,12 @@
 
 Start with a real situation: who encounters the difficulty, what happens, how it is handled today, and what could be improved.
 
+## Where to submit
+
+With community access, [check existing Issues](https://github.com/OpenRDHub/community/issues), then [use the needs template](https://github.com/OpenRDHub/community/issues/new?template=need.en.md). For an established project, use its route in the [project directory](projects.en.md). Link an existing Issue instead of duplicating it.
+
+Without access, the organization profile currently points to [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues). This existing public route is under a personal account; its future intake role and triage contact remain unconfirmed. Check the audience before submitting and exclude raw medical records and private contact details from public pages.
+
 ## Useful details
 
 - The situation and current difficulty.

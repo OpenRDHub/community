@@ -6,7 +6,7 @@
 <p><b>Bring people and skills together with patients to turn real needs into practical solutions.</b></p>
 <p>Open-source collaboration for rare disease needs, led by patients, builders, researchers, designers, and clinicians.</p>
 <p><a href="https://github.com/OpenRDHub">Khub-OpenRD</a> · <a href="https://github.com/OpenRare2026/OpenRare">OpenRare</a> · <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">Share a need</a></p>
-<p><a href="https://github.com/OpenRDHub/community/blob/main/README.en.md">Join community work</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.en.md">Community library</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md">Records and operations proposal</a></p>
+<p><a href="https://github.com/OpenRDHub/community/blob/main/README.en.md">Community work (access required)</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.en.md">Community library (access required)</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md">Records and operations proposal (access required)</a></p>
 </div>
 
 ## Who We Are
@@ -48,7 +48,7 @@ Meeting notes, discussions, decisions, and new references should remain useful t
 | How to prepare and maintain a record | [Record policy](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/record-policy.en.md) |
 | Responsibilities and rollout | [Full proposal](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md) |
 
-*These community routes are proposed locally and have not been published. Existing needs and project links remain available.*
+*The community repository exists and is private; all community routes above require access. This profile update is still awaiting merge. Existing needs and project links remain available.*
 
 ## Featured Project
 

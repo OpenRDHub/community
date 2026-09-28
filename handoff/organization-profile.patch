@@ -1,0 +1,312 @@
+diff --git a/.github/ISSUE_TEMPLATE/task.md b/.github/ISSUE_TEMPLATE/task.md
+new file mode 100644
+index 0000000..13aa2e3
+--- /dev/null
++++ b/.github/ISSUE_TEMPLATE/task.md
+@@ -0,0 +1,17 @@
++---
++name: "任务 / Task"
++about: "本仓库内有明确下一步的工作 / Actionable work for this repository"
++title: ""
++labels: ""
++assignees: ""
++---
++
++## 问题与来源 / Problem and source
++
++## 预期产出 / Expected result
++
++## 怎样判断完成 / Acceptance
++
++## 需要的协作 / Support
++
++答疑、评审和下次沟通由相关人确认，不自动分配。Confirm handling and review; do not assume assignments.
+diff --git a/.github/PULL_REQUEST_TEMPLATE.md b/.github/PULL_REQUEST_TEMPLATE.md
+new file mode 100644
+index 0000000..840c252
+--- /dev/null
++++ b/.github/PULL_REQUEST_TEMPLATE.md
+@@ -0,0 +1,15 @@
++## 修改 / Change
++
++问题、改动和原因。Problem, change and reason.
++
++## 来源 / Source
++
++关联已有任务；独立小改说明原因即可，不必先建 Issue。Link an existing task or explain an independent fix.
++
++## 验证 / Validation
++
++检查方法、结果和仍待确认的部分。Checks, results and remaining review.
++
++## 接收位置 / Destination
++
++确认仓库和目标分支；跨仓用完整引用。Confirm repository and branch; qualify cross-repository references.
+diff --git a/CONTRIBUTING.en.md b/CONTRIBUTING.en.md
+new file mode 100644
+index 0000000..3b82d77
+--- /dev/null
++++ b/CONTRIBUTING.en.md
+@@ -0,0 +1,19 @@
++[简体中文](CONTRIBUTING.md)
++
++# Contributing to OpenRD
++
++Start with the [organization profile](https://github.com/OpenRDHub) and choose the destination based on the change.
++
++- Known project bugs or features: use its documented issue tracker and receiving repository.
++- OpenRare: the organization repository is a fork; use [upstream Issues](https://github.com/OpenRare2026/OpenRare/issues).
++- Needs without a project: the existing entry is [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues), under a personal account. Use existing contacts; no unified response time is promised.
++- Community documents: private community content requires access; an existing community contact or WeChat group may help reach an administrator. A shared public contact remains unconfirmed.
++- Organization profile and default rules: changes belong in [.github](https://github.com/OpenRDHub/.github), not unrelated project bug reports.
++
++## Sending changes
++
++Small independent fixes may go directly to a PR. Link an existing Issue when applicable; describe source, output and acceptance for larger work. Check the receiving repository and branch. A personal fork is a valid source.
++
++Explain the change, reason, checks and remaining review. Proposal adoption, merging and real-world acceptance are separate steps.
++
++Writing, source checking, usability feedback and resource coordination are welcome. Share material appropriate for the destination's audience.
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+new file mode 100644
+index 0000000..3317ad3
+--- /dev/null
++++ b/CONTRIBUTING.md
+@@ -0,0 +1,19 @@
++[English](CONTRIBUTING.en.md)
++
++# 参与 OpenRD
++
++先从 [组织主页](https://github.com/OpenRDHub) 了解社区，按改动选择目标仓库。
++
++- 已知项目的问题或功能：在该项目约定的 Issue 入口提出，PR 发到接收改动的仓库。
++- OpenRare：组织内为 fork，目前使用 [上游反馈入口](https://github.com/OpenRare2026/OpenRare/issues)。
++- 尚未归属项目的需求：现有入口是个人账号下的 [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues)。接待沿用社区现有联络方式，尚未承诺统一响应时间。
++- 社区公共文档：私有 community 仅获授权人员可访问；若已在社区微信群或认识联络人，可请其协助联系管理员；统一公开接待人仍待确认。
++- 组织主页和默认规则：在 [.github](https://github.com/OpenRDHub/.github) 提交修改，不把普通项目问题送到这里。
++
++## 提交修改
++
++独立小修正可以直接发 PR。已有 Issue 就链接它；大的修改说明来源、产出和验收。确认接收仓库及目标分支，个人 fork 可以作为代码来源。
++
++说明改了什么、为什么、怎样检查、哪些仍待确认。提案采纳、代码合并与真实使用验收是不同步骤。
++
++不会 Git 的伙伴可以提供文字、资料核对、体验反馈或资源协助，再由接待者帮助整理。分享内容应符合目标仓库可见范围。
+diff --git a/profile/README.en.md b/profile/README.en.md
+new file mode 100644
+index 0000000..d782ade
+--- /dev/null
++++ b/profile/README.en.md
+@@ -0,0 +1,126 @@
++[简体中文](README.md) · **English**
++
++<div align="center">
++<img width="112" src="https://avatars.githubusercontent.com/u/252578712?v=4" alt="K-Hub logo" />
++<h1>Khub OpenRD</h1>
++<p><b>Bring people and skills together with patients to turn real needs into practical solutions.</b></p>
++<p>Open-source collaboration for rare disease needs, led by patients, builders, researchers, designers, and clinicians.</p>
++<p><a href="https://github.com/OpenRDHub">Khub-OpenRD</a> · <a href="https://github.com/OpenRare2026/OpenRare">OpenRare</a> · <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">Share a need</a></p>
++<p><a href="https://github.com/OpenRDHub/community/blob/main/README.en.md">Community work (access required)</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.en.md">Community library (access required)</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md">Records and operations proposal (access required)</a></p>
++</div>
++
++## Who We Are
++
++The Khub team was founded in 2024 and launched the OpenRD rare disease open-source community in September 2025. Patients and professionals from different disciplines bring together medicine, technology, design, community operations, education, and communication through open collaboration.
++
++We want people to keep building useful projects together. Patients can define their own needs, help set product priorities, test experiences, and participate as co-creators.
++
++| Community members | Followers across channels | Open-source projects | AI learning program members |
++|---|---|---|---|
++| 150+ | 13,000+ | 8+ | 400+ |
++
++## What We Believe
++
++| Principle | What it means |
++|---|---|
++| Patients also help create solutions | Patients, families, and clinicians should help define the direction, minimum useful outcome, and acceptance criteria. |
++| Rare disease needs extend beyond treatment | Daily life, education, employment, social connection, information, and long-term self-management also matter. |
++| Open collaboration makes progress possible | Share problems and capabilities, support handovers, and improve work together. |
++| Everyone can contribute | Technical, medical, design, community, communications, education, patient, family, and student perspectives all have a place. |
++
++## Guide
++
++| What would you like to do? | Start here |
++|---|---|
++| Explore rare disease projects | Visit [OpenRare](https://github.com/OpenRare2026/OpenRare). |
++| Share a real need | Use the existing [needs issue tracker](https://github.com/Khub-OpenRD/rare-disease-list/issues). |
++| Join the work | Bring code, data, design, medical research, or communication skills to a project. |
++| Help build the community | Explore documentation, records, operations, and collaboration in the [participation guide](https://github.com/OpenRDHub/community/blob/main/docs/getting-started.en.md). |
++| Offer support | Support project incubation, infrastructure, hackathons, learning programs, data governance, or joint research. |
++
++## Community Materials and Working Records
++
++Meeting notes, discussions, decisions, and new references should remain useful to people joining later. We propose keeping discussion in WeChat groups, drafting collaboratively in Feishu, preserving curated versions in GitHub, and presenting them through one searchable documentation website.
++
++| What would you like to find? | Entry point |
++|---|---|
++| Recent meetings, discussions, and materials | [Community library](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.en.md) |
++| How to prepare and maintain a record | [Record policy](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/record-policy.en.md) |
++| Responsibilities and rollout | [Full proposal](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md) |
++
++*The community repository exists and is private; all community routes above require access. This profile update is still awaiting merge. Existing needs and project links remain available.*
++
++## Featured Project
++
++### OpenRare
++
++Rare Disease Agent is an open-source genetic analysis system for rare disease diagnosis scenarios. OpenRare makes otherwise hard-to-find clues searchable and supports collaboration and continuous improvement.
++
++[Visit repository](https://github.com/OpenRare2026/OpenRare) · [Contribute ideas](https://github.com/OpenRare2026/OpenRare/issues)
++
++## OpenRD Projects
++
++| Area | Project and purpose | Status in the existing README |
++|---|---|---|
++| AI / genetic analysis | [OpenRare](https://github.com/OpenRare2026/OpenRare): an open-source genetic analysis system for rare disease diagnosis scenarios | Open-source development |
++| Assistive hardware | 3D-printed assistive glove: support everyday gripping for people experiencing hand weakness | Open source; two testing iterations completed |
++| Patient support | FSHD management platform: AI reports, visual health management, and patient data agency | Internal testing with 50 patients |
++| AI platform | Rare disease information search: help patients, families, and clinicians find and understand information | In training |
++| AI diagnosis research | FSHD early screening tool: explore support for recognizing easily overlooked early signs | Release planned |
++| Soft robotics | Pneumatic capsule muscle-assistance tool: explore lightweight assistance | In development |
++| Research | 48-hour rare disease genetics hackathon: AI and bioinformatics collaboration with clinicians and patients | First edition completed; second in preparation |
++| Open data | Rare disease database: patient-contributed, de-identified materials for research collaboration | In development |
++| Capacity building | AI for rare disease learning program: knowledge bases, educational websites, comics, videos, and small tools | Running; 400+ learners |
++
++Browse the [existing organization repositories](https://github.com/orgs/OpenRDHub/repositories) or the [project-to-repository mapping](https://github.com/OpenRDHub/community/blob/main/docs/projects.en.md) (private repository; access required). Project descriptions and repository listings serve different purposes; verified relationships are documented in the mapping.
++
++## How It Works
++
++The existing community model starts with a real need and aims to sustain useful work:
++
++1. Patients or frontline clinicians describe a need.
++2. Contributors form a group across development, design, research, fabrication, and communication.
++3. The group builds an initial useful version.
++4. The people with the need validate the outcome.
++5. More patients try it and provide feedback.
++6. Resources or proceeds return to support community operations.
++
++Each project has an actual needs partner who helps define its direction and acceptance criteria. Any specific arrangement for income or resource allocation needs an explicit agreement; this diagram is not a promise of returns.
++
++## Community Contributors
++
++Khub OpenRD welcomes equal, open collaboration across roles. People can help turn needs into outcomes that can be tested, improved, and maintained.
++
++| Role | Contribution |
++|---|---|
++| Product / design | Understand needs and design useful experiences |
++| Clinicians / researchers | Contribute scientific knowledge and clinical context |
++| Community operations | Connect people, maintain shared information, and support continuity |
++| Frontend | Build interfaces and interactions |
++| Backend | Develop reliable services and data flows |
++| Algorithms | Explore data and models for complex problems |
++| Bioinformatics | Connect biological knowledge and information science |
++| Genetic analysis | Contribute genetic interpretation expertise |
++
++We appreciate everyone contributing to the rare disease community.
++
++<img src="https://image.gulu9832.xyz/khubsupport.png" alt="Community supporters, retained from the existing README" />
++
++## Work With Us
++
++| Partnership | Possible contribution |
++|---|---|
++| Resources / funding | Support projects, infrastructure, hackathons, or learning programs |
++| Technology / product | Bring development, design, and product capabilities into open collaboration |
++| Data / research | Collaborate with clinicians and open-data projects across medicine, algorithms, materials, or genetics |
++| Joint projects | Propose and co-organize a rare disease or technology initiative |
++
++## Join Us
++
++People from technical, medical, design, community, communications, education, patient, and family backgrounds are welcome, including those who simply want to share an idea.
++
++[Share a need](https://github.com/Khub-OpenRD/rare-disease-list/issues) · [Follow OpenRDHub](https://github.com/OpenRDHub) · [Explore community participation](https://github.com/OpenRDHub/community/blob/main/README.en.md)
++
++Douyin: @OpenRD罕见病开源社区
++
++The community's open materials support knowledge organization, patient support, research collaboration, and shared tools. They do not replace professional diagnosis or treatment advice.
+diff --git a/profile/README.md b/profile/README.md
+index e5efde4..39620ad 100644
+--- a/profile/README.md
++++ b/profile/README.md
+@@ -1,3 +1,5 @@
++**简体中文** · [English](README.en.md)
++
+ <div align="center">
+ 
+   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1200&color=1F7A8C&center=true&vCenter=true&width=760&lines=Khub+OpenRD+%E7%BD%95%E8%A7%81%E7%97%85%E5%BC%80%E6%BA%90%E7%A4%BE%E5%8C%BA;%E8%AE%A9%E7%9C%9F%E5%AE%9E%E9%9C%80%E6%B1%82%E9%95%BF%E6%88%90%E7%9C%9F%E6%AD%A3%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88;Patients+as+PMs%2C+open-source+as+the+method" alt="Khub OpenRD typing banner" />
+@@ -9,9 +11,9 @@
+   <div>&nbsp;</div>
+ 
+   <div>
+-    <a href="https://github.com/Khub-OpenRD"><img src="https://img.shields.io/badge/GitHub-Khub--OpenRD-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>&emsp;
++    <a href="https://github.com/OpenRDHub"><img src="https://img.shields.io/badge/GitHub-OpenRDHub-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>&emsp;
+     <a href="https://github.com/OpenRare2026/OpenRare"><img src="https://img.shields.io/badge/OpenRare-Rare%20Disease%20Agent-1F7A8C?style=for-the-badge" alt="OpenRare" /></a>&emsp;
+-    <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues"><img src="https://img.shields.io/badge/Join%20Us-%E5%8F%82%E4%B8%8E%E5%85%B1%E5%BB%BA-2D9CDB?style=for-the-badge" alt="Join us" /></a>
++    <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues"><img src="https://img.shields.io/badge/Needs-rare--disease--list-2D9CDB?style=for-the-badge" alt="Needs · Khub-OpenRD/rare-disease-list" /></a>
+   </div>
+ 
+   <div>&nbsp;</div>
+@@ -21,6 +23,10 @@
+ 
+ </div>
+ 
++<p align="center"><a href="https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.md">公开参与说明</a> · <a href="https://github.com/OpenRDHub/community/blob/main/README.md">成员协作资料（需权限）</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">查阅社区资料（需权限）</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">资料归档与运营方案（需权限）</a></p>
++
++<p><b>协作入口：</b>当前组织是 OpenRDHub；Khub-OpenRD/rare-disease-list 是个人账号下的既有需求入口，分拣安排待确认。OpenRare 上游贡献仍进入 OpenRare2026/OpenRare。community 已创建为 PRIVATE，外部访客需使用可访问的公开入口。<a href="https://github.com/OpenRDHub/community/blob/main/docs/routing.md">入口归属表（需权限）</a>。</p>
++
+ <h2 align="center">Who We Are</h2>
+ 
+ <p>
+@@ -74,18 +80,30 @@ Khub团队 成立于 2024 年，并于 2025 年 9 月发起 OpenRD 罕见病开
+   </tr>
+   <tr>
+     <td align="center"><b>想提出真实需求？</b></td>
+-    <td align="center">欢迎通过 <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">GitHub Issues</a> 留下问题、病种线索或产品想法。</td>
++    <td align="center">欢迎通过 <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">既有需求池（个人账号）</a> 留下问题、病种线索或产品想法。</td>
+   </tr>
+   <tr>
+     <td align="center"><b>想加入共建？</b></td>
+     <td align="center">带着你的专业能力加入一个具体项目：代码、数据、设计、医学研究、内容传播都需要。</td>
+   </tr>
++  <tr>
++    <td align="center"><b>想参与社区建设？</b></td>
++    <td align="center">从 <a href="https://github.com/OpenRDHub/community/blob/main/docs/getting-started.md">community 参与指南（需权限）</a> 了解文档、资料整理、运营和社区协作的参与方式。</td>
++  </tr>
+   <tr>
+     <td align="center"><b>想合作支持？</b></td>
+     <td align="center">欢迎支持项目孵化、平台基建、黑客松、学习班、数据治理与联合研究。</td>
+   </tr>
+ </table>
+ 
++<h2 align="center">社区资料与协作记录</h2>
++
++<p>会议纪要、讨论过程、阶段决定与每日新增资料，都应该能够被后来的参与者找到。我们计划在微信群继续讨论，用飞书协作整理文档，将整理后的资料版本保存到 GitHub，再由文档网页统一展示。</p>
++
++<table><tr><th>我想了解</th><th>从这里进入</th></tr><tr><td>会议、讨论和资料最近有什么变化</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">社区资料中心</a></td></tr><tr><td>怎样整理一份记录并同步到 GitHub</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/record-policy.md">收录与维护约定</a></td></tr><tr><td>这套分工怎么运行、先做什么</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">查看完整方案草稿</a></td></tr></table>
++
++<p><sub>community 已建立为私有仓库，以上资料入口均需访问权限；本主页更新稿尚待合入。原有需求入口与项目链接继续保留。</sub></p>
++
+ <h2 align="center">Featured Project</h2>
+ 
+ <table>
+@@ -160,6 +178,8 @@ Khub团队 成立于 2024 年，并于 2025 年 9 月发起 OpenRD 罕见病开
+   </tr>
+ </table>
+ 
++<p>查看 <a href="https://github.com/orgs/OpenRDHub/repositories">组织现有仓库</a>，或查阅 <a href="https://github.com/OpenRDHub/community/blob/main/docs/projects.md">项目与仓库对应目录</a>（私有仓库，需访问权限）。项目介绍与仓库目录分别维护，已核验关系见对应说明。</p>
++
+ <h2 align="center">How It Works</h2>
+ 
+ <p align="center">
+@@ -257,9 +277,9 @@ Khub OpenRD 是一个开放、平等、去中心化的社区。我们欢迎不
+ </p>
+ 
+ <p align="center">
+-  <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">Open an Issue</a>
++  <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">需求登记 · Khub-OpenRD</a>
+   &nbsp;|&nbsp;
+-  <a href="https://github.com/Khub-OpenRD">Follow Khub-OpenRD</a>
++  <a href="https://github.com/OpenRDHub">Follow OpenRDHub</a>
+   &nbsp;|&nbsp;
+   抖音：@OpenRD罕见病开源社区
+ </p>

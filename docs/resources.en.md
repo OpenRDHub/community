@@ -4,6 +4,12 @@
 
 Describe the support you can offer or the help you need clearly enough for others to assess a possible match.
 
+## Where to submit
+
+With community access, use the [resources template](https://github.com/OpenRDHub/community/issues/new?template=resource.en.md), state whether you offer or request support, and identify any unconfirmed conditions. Add updates to an [existing Issue](https://github.com/OpenRDHub/community/issues) when one exists.
+
+Without access, prepare the support, conditions, availability, and preferred collaboration arrangement; an existing community contact or WeChat group may help connect you. A shared public resource contact is not yet in place. Recording an offer does not confirm availability or delivery.
+
 ## What you can offer
 
 A review session, guidance, documentation help, equipment, making facilities, space, funding, content, or outreach can all be useful. Explain the scope and availability.
