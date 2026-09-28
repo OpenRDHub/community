@@ -6,9 +6,9 @@
 
 ## 登记入口
 
-已有 community 权限者可[使用资源协作模板](https://github.com/OpenRDHub/community/issues/new?template=resource.md)，同时说明是提供支持还是申请支持，并注明尚待确认的条件。已有资源事项请在[原 Issue](https://github.com/OpenRDHub/community/issues)补充。
+登录 GitHub 后即可[使用资源协作模板](https://github.com/OpenRDHub/community/issues/new?template=resource.md)，同时说明是提供支持还是申请支持，并注明尚待确认的条件。已有资源事项请在[原 Issue](https://github.com/OpenRDHub/community/issues)补充。
 
-没有仓库权限时，可先准备“支持内容、条件、可用时间、希望的合作方式”四项信息，通过已认识的社区联络人或已有微信群协助对接。统一对外资源接待入口尚未落实，登记也不代表资源已获确认或承诺兑现。
+不熟悉 GitHub 时，可先准备“支持内容、条件、可用时间、希望的合作方式”四项信息，通过已认识的社区联络人或已有微信群协助对接。资源接待人尚未落实，登记也不代表资源已获确认或承诺兑现。
 
 ## 可以提供什么
 

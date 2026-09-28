@@ -7,7 +7,7 @@ summary: 修复入口归属、记录模板、单语构建与资料元信息；�
 date: '2026-09-28'
 updated: '2026-09-28'
 status: pending-review
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false

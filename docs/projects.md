@@ -2,12 +2,13 @@
 
 # 项目与仓库对应目录
 
-按 [OpenRDHub 组织仓库列表](https://github.com/orgs/OpenRDHub/repositories)于 **2026-09-28** 核验：目前有 **12 个公开仓库**。以下名称、地址、默认分支与 fork 信息来自 GitHub；描述介绍仓库用途，不代表功能已经完成或项目正在招募。
+按 [OpenRDHub 组织仓库列表](https://github.com/orgs/OpenRDHub/repositories)于 **2026-09-28** 核验：目前有 **13 个公开仓库**。以下名称、地址、默认分支与 fork 信息来自 GitHub；描述介绍仓库用途，不代表功能已经完成或项目正在招募。
 
 ## 组织内现有仓库
 
 | 仓库 | 仓库说明 | 默认分支 / 关系 |
 |---|---|---|
+| [community](https://github.com/OpenRDHub/community) | 社区参与说明、过程记录和公共事务协作。 | `main` |
 | [OpenRD-CollabPlat](https://github.com/OpenRDHub/OpenRD-CollabPlat) | OpenRD-CollabPlat是由OpenRD社区开发的一个以患者真实需求为导向，借助专业技术来开发对应工具、解决问题的项目管理平台 | `develop` |
 | [accessible-musical-instruments](https://github.com/OpenRDHub/accessible-musical-instruments) | 面向肢体障碍音乐爱好者的无障碍乐器改造 | `main` |
 | [nasal-airflow-simulation-tool](https://github.com/OpenRDHub/nasal-airflow-simulation-tool) | 鼻腔气流重构：匿名化鼻腔 CT → 自动三维建模 → CFD 气流分析（黑客松范围：阶段一；模型修改与鼻塞设计为后续路线） | `main` |
@@ -29,7 +30,7 @@
 |---|---|---|
 | OpenRare | [组织内 OpenRare](https://github.com/OpenRDHub/OpenRare) · [原 README 的上游地址](https://github.com/OpenRare2026/OpenRare) | GitHub 元数据确认：组织内仓库为该上游的 fork；主开发入口仍需维护者说明 |
 | 3D 打印辅具手套 | [fshd-hand-assistive-device](https://github.com/OpenRDHub/fshd-hand-assistive-device) | 相关方向。仓库描述称其为 OpenHandAid 下一代；是否与原 README 的手套条目为同一项目，待维护者确认 |
-| FSHD 单病种管理平台 | 当前 12 个组织仓库中未核验到直接对应 | 不能用 FSHD 手部辅具仓库代替管理平台 |
+| FSHD 单病种管理平台 | 当前组织仓库中未核验到直接对应 | 不能用 FSHD 手部辅具仓库代替管理平台 |
 | 罕见病信息 AI 检索平台 | 当前组织列表中未核验到直接对应 | 保留介绍，待补主仓库或资料入口 |
 | FSHD 早筛早诊 AI 工具 | 当前组织列表中未核验到直接对应 | 保留介绍，待补主仓库或资料入口 |
 | 气动胶囊仿生肌肉工具 | 当前组织列表中未核验到直接对应 | 不直接映射为手部辅具项目 |
@@ -37,9 +38,9 @@
 | 罕见病开源数据库 | 当前组织列表中未核验到直接对应 | 保留介绍，待补主仓库或资料入口 |
 | AI for 罕见病学习班 | 当前组织列表中未核验到直接对应 | 属于活动 / 能力建设介绍，不据此假设有独立仓库 |
 
-## 私有 community
+## 公开 community
 
-`OpenRDHub/community` 已显式创建为 PRIVATE，不计入上述 12 个公开仓库。保存参与说明、过程记录和社区公共事务；仅获授权人员可访问。
+`OpenRDHub/community` 已于 2026-09-28 按用户明确指示改为 PUBLIC，计入上述 13 个公开仓库。公开维护参与说明、过程记录和社区公共事务；社区 Project 看板仍为私有。
 
 ## 项目协作范围
 
@@ -52,4 +53,4 @@
 - **rare-disease-gene-hackathon-sop**：文档存在；首页未展示 README，请打开 01_README.md。 [打开 SOP 文档](https://github.com/OpenRDHub/rare-disease-gene-hackathon-sop/blob/main/01_README.md)
 - **OpenRare**：组织内副本；反馈与上游贡献进入 OpenRare2026/OpenRare。 [上游 Issues（组织 fork 未开启）](https://github.com/OpenRare2026/OpenRare/issues)
 
-状态更新：community 已创建为 PRIVATE；公开项目清单仍为 12 个，治理文件与接待分工仍待社区确认。
+状态更新：community 已改为 PUBLIC；组织公开仓库共 13 个，治理文件与接待分工仍待社区确认。

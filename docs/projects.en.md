@@ -2,12 +2,13 @@
 
 # Projects and Repository Mapping
 
-Verified against the [OpenRDHub repository list](https://github.com/orgs/OpenRDHub/repositories) on **September 28, 2026**: **12 public repositories**. Names, URLs, default branches, and fork metadata come from GitHub. Descriptions state repository purposes, not verified feature completion or recruitment status.
+Verified against the [OpenRDHub repository list](https://github.com/orgs/OpenRDHub/repositories) on **September 28, 2026**: **13 public repositories**. Names, URLs, default branches, and fork metadata come from GitHub. Descriptions state repository purposes, not verified feature completion or recruitment status.
 
 ## Existing organization repositories
 
 | Repository | Description | Default branch / relationship |
 |---|---|---|
+| [community](https://github.com/OpenRDHub/community) | Community participation guides, working records, and shared operations. | `main` |
 | [OpenRD-CollabPlat](https://github.com/OpenRDHub/OpenRD-CollabPlat) | A community collaboration platform connecting patient needs with contributors and project work. | `develop` |
 | [accessible-musical-instruments](https://github.com/OpenRDHub/accessible-musical-instruments) | Accessible musical instrument adaptations for music enthusiasts with limb disabilities. | `main` |
 | [nasal-airflow-simulation-tool](https://github.com/OpenRDHub/nasal-airflow-simulation-tool) | Anonymized nasal CT to 3D modeling and CFD airflow analysis; the hackathon covers phase one. | `main` |
@@ -29,7 +30,7 @@ Preserve the original project descriptions and order. A project, event, and repo
 |---|---|---|
 | OpenRare | [Organization fork](https://github.com/OpenRDHub/OpenRare) · [Original upstream link](https://github.com/OpenRare2026/OpenRare) | GitHub confirms the fork relationship. Maintainers should clarify the primary development route. |
 | 3D-printed assistive glove | [fshd-hand-assistive-device](https://github.com/OpenRDHub/fshd-hand-assistive-device) | Related area; the repository describes itself as the next generation of OpenHandAid. Its identity with the README glove entry remains unconfirmed. |
-| FSHD management platform | No direct match verified among the 12 repositories | The FSHD hand-assistance repository is not a substitute for a management platform. |
+| FSHD management platform | No direct match verified among the current repositories | The FSHD hand-assistance repository is not a substitute for a management platform. |
 | Rare disease information search | No direct match verified | Retain the description and request the primary repository or materials link. |
 | FSHD early screening tool | No direct match verified | Retain the description and request the primary repository or materials link. |
 | Pneumatic capsule muscle-assistance tool | No direct match verified | Do not assume it is the hand-assistance project. |
@@ -37,9 +38,9 @@ Preserve the original project descriptions and order. A project, event, and repo
 | Rare disease database | No direct match verified | Retain the description and request the primary repository or materials link. |
 | AI for rare disease learning program | No direct match verified | An event and capacity-building program does not necessarily have a dedicated repository. |
 
-## Private community repository
+## Public community repository
 
-`OpenRDHub/community` has been created explicitly PRIVATE and is excluded from the 12 public repositories above. It holds shared documents, working records and community operations for authorized readers.
+`OpenRDHub/community` was changed to PUBLIC on September 28, 2026 under explicit user instruction and is included in the 13 public repositories above. It holds public participation guides, working records, and shared operations. The community Project board remains private.
 
 ## Project coordination
 
@@ -52,4 +53,4 @@ This phase improves community entry points and material navigation without chang
 - **rare-disease-gene-hackathon-sop**：Documentation exists; open 01_README.md because the homepage does not render it. [Open SOP documentation](https://github.com/OpenRDHub/rare-disease-gene-hackathon-sop/blob/main/01_README.md)
 - **OpenRare**：Organization fork; upstream contributions go to OpenRare2026/OpenRare. [Upstream Issues (disabled in this fork)](https://github.com/OpenRare2026/OpenRare/issues)
 
-Status update: community is now PRIVATE. The public project list remains 12 repositories. Governance drafts and handling roles still require community confirmation.
+Status update: community is now PUBLIC. The organization now has 13 public repositories. Governance drafts and handling roles still require community confirmation.

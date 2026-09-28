@@ -7,7 +7,7 @@ summary: Responsibilities across WeChat groups, Feishu, GitHub, and the website,
 date: '2026-09-28'
 updated: '2026-09-28'
 status: draft
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -81,7 +81,7 @@ OpenRDHub/.github
   profile/README.md
   profile/README.en.md
 
-OpenRDHub/community        # Explicitly PRIVATE if created
+OpenRDHub/community        # Changed to PUBLIC on 2026-09-28 under user instruction
   README.md
   docs/knowledge/
   records/meetings/2026/
@@ -103,9 +103,9 @@ The first website offers category and full-text search, recent updates, status l
 
 GitHub storage does not mean public distribution. WeChat originals stay within the original conversation audience. Store necessary excerpts or attachments in restricted documents when agreed. Patient or identity information remains in access-controlled locations. If internal Git backups are needed, use a separately restricted repository; an `internal/` directory in a public repository is not an access boundary.
 
-Create community explicitly as PRIVATE under the current workspace rule. Decide any repository publication and document publication separately. A public build must filter pages, search indexes, source downloads, attachments, and ZIP files to reviewed, explicitly publishable content.
+community is now PUBLIC under explicit user instruction; its files and history are publicly readable. Keep non-public source material in a separate access-controlled location. Website publication metadata does not restrict GitHub access. A public build must filter pages, search indexes, source downloads, attachments, and ZIP files to reviewed, explicitly publishable content.
 
-GitHub Pages serves static websites. A private repository does not itself make the website private; private Pages access control has GitHub Enterprise Cloud requirements. Begin with local preview and private repository reading, then choose hosting for approved public content according to the actual plan. [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [Pages access control](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)
+GitHub Pages serves static websites. A private repository does not itself make the website private; private Pages access control has GitHub Enterprise Cloud requirements. The repository is now publicly readable, while the website remains a local preview. Choose hosting for approved website content according to the actual plan. [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [Pages access control](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)
 
 ## 8. Two-week trial
 

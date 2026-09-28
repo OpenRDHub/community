@@ -38,7 +38,7 @@ Give specific feedback and record the result and credit according to the contrib
 
 [Contribution and growth](MEMBERSHIP.en.md) · [Everyday collaboration](docs/working-together.en.md)
 
-> The repository, Discussions, and board are private. Six Issues are registered but support and reviewers remain unconfirmed. Roles and rules still require community agreement.
+> The repository, Issues, PRs, and Discussions are public; the community board remains private. Six Issues are registered but support and reviewers remain unconfirmed. Roles and rules still require community agreement.
 
 ## Keep working records here too
 
@@ -50,6 +50,6 @@ The [community library](docs/knowledge/README.en.md) covers meeting notes, discu
 
 [Entry points](docs/routing.en.md) · [Implementation](docs/pilot.en.md)
 
-Implementation Issues/PRs stay in project repositories. Community maintains shared operations and references. Private materials require access.
+Implementation Issues/PRs stay in project repositories. Community maintains public operations and references. Non-public source materials belong in a separate access-controlled location.
 
 [Issues](https://github.com/OpenRDHub/community/issues) · [Community board](https://github.com/orgs/OpenRDHub/projects/1) · [Trial discussion](https://github.com/OpenRDHub/community/discussions/9) · [Trial status and open arrangements](docs/launch.en.md)

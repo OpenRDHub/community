@@ -182,6 +182,20 @@
       "pr_url": "https://github.com/OpenRare2026/OpenRare/pulls",
       "stage": "组织内副本；反馈与上游贡献进入 OpenRare2026/OpenRare。",
       "stage_en": "Organization fork; upstream contributions go to OpenRare2026/OpenRare."
+    },
+    {
+      "name": "community",
+      "html_url": "https://github.com/OpenRDHub/community",
+      "description": "社区参与说明、过程记录和公共事务协作。",
+      "description_en": "Community participation guides, working records, and shared operations.",
+      "visibility": "public",
+      "fork": false,
+      "archived": false,
+      "default_branch": "main",
+      "intake_url": "https://github.com/OpenRDHub/community/issues",
+      "intake_label": "本仓 Issues",
+      "intake_label_en": "Repository Issues",
+      "pr_url": "https://github.com/OpenRDHub/community/pulls"
     }
   ]
 }

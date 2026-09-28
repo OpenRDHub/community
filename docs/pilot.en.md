@@ -22,6 +22,6 @@ No WeChat or Feishu content has been imported and no group message is sent.
 
 ## Verified remote result
 
-community is PRIVATE. PR #2 is merged into main and Issue #1 is automatically closed. Merging archives this implementation and draft materials; it does not replace community discussion of rules or roles.
+community is now PUBLIC under user instruction. PR #2 is merged into main and Issue #1 is automatically closed. Merging archives this implementation and draft materials; it does not replace community discussion of rules or roles.
 
 [New trial configuration and open arrangements](launch.en.md)

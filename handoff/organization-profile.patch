@@ -44,7 +44,7 @@ index 0000000..840c252
 +确认仓库和目标分支；跨仓用完整引用。Confirm repository and branch; qualify cross-repository references.
 diff --git a/CONTRIBUTING.en.md b/CONTRIBUTING.en.md
 new file mode 100644
-index 0000000..3b82d77
+index 0000000..c1d9c3d
 --- /dev/null
 +++ b/CONTRIBUTING.en.md
 @@ -0,0 +1,19 @@
@@ -57,7 +57,7 @@ index 0000000..3b82d77
 +- Known project bugs or features: use its documented issue tracker and receiving repository.
 +- OpenRare: the organization repository is a fork; use [upstream Issues](https://github.com/OpenRare2026/OpenRare/issues).
 +- Needs without a project: the existing entry is [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues), under a personal account. Use existing contacts; no unified response time is promised.
-+- Community documents: private community content requires access; an existing community contact or WeChat group may help reach an administrator. A shared public contact remains unconfirmed.
++- Community documents: visit the public [community repository](https://github.com/OpenRDHub/community) and participate through Issues, PRs, or Discussions. Intake contacts and feedback arrangements remain unconfirmed.
 +- Organization profile and default rules: changes belong in [.github](https://github.com/OpenRDHub/.github), not unrelated project bug reports.
 +
 +## Sending changes
@@ -69,7 +69,7 @@ index 0000000..3b82d77
 +Writing, source checking, usability feedback and resource coordination are welcome. Share material appropriate for the destination's audience.
 diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
 new file mode 100644
-index 0000000..3317ad3
+index 0000000..2b2a12a
 --- /dev/null
 +++ b/CONTRIBUTING.md
 @@ -0,0 +1,19 @@
@@ -82,7 +82,7 @@ index 0000000..3317ad3
 +- 已知项目的问题或功能：在该项目约定的 Issue 入口提出，PR 发到接收改动的仓库。
 +- OpenRare：组织内为 fork，目前使用 [上游反馈入口](https://github.com/OpenRare2026/OpenRare/issues)。
 +- 尚未归属项目的需求：现有入口是个人账号下的 [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues)。接待沿用社区现有联络方式，尚未承诺统一响应时间。
-+- 社区公共文档：私有 community 仅获授权人员可访问；若已在社区微信群或认识联络人，可请其协助联系管理员；统一公开接待人仍待确认。
++- 社区公共文档：到公开的 [community](https://github.com/OpenRDHub/community) 查阅说明，通过 Issue、PR 或 Discussions 参与；接待人和反馈安排仍待确认。
 +- 组织主页和默认规则：在 [.github](https://github.com/OpenRDHub/.github) 提交修改，不把普通项目问题送到这里。
 +
 +## 提交修改
@@ -94,7 +94,7 @@ index 0000000..3317ad3
 +不会 Git 的伙伴可以提供文字、资料核对、体验反馈或资源协助，再由接待者帮助整理。分享内容应符合目标仓库可见范围。
 diff --git a/profile/README.en.md b/profile/README.en.md
 new file mode 100644
-index 0000000..d782ade
+index 0000000..dc62007
 --- /dev/null
 +++ b/profile/README.en.md
 @@ -0,0 +1,126 @@
@@ -106,7 +106,7 @@ index 0000000..d782ade
 +<p><b>Bring people and skills together with patients to turn real needs into practical solutions.</b></p>
 +<p>Open-source collaboration for rare disease needs, led by patients, builders, researchers, designers, and clinicians.</p>
 +<p><a href="https://github.com/OpenRDHub">Khub-OpenRD</a> · <a href="https://github.com/OpenRare2026/OpenRare">OpenRare</a> · <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">Share a need</a></p>
-+<p><a href="https://github.com/OpenRDHub/community/blob/main/README.en.md">Community work (access required)</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.en.md">Community library (access required)</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md">Records and operations proposal (access required)</a></p>
++<p><a href="https://github.com/OpenRDHub/community/blob/main/README.en.md">Community work</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.en.md">Community library</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md">Records and operations proposal</a></p>
 +</div>
 +
 +## Who We Are
@@ -148,7 +148,7 @@ index 0000000..d782ade
 +| How to prepare and maintain a record | [Record policy](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/record-policy.en.md) |
 +| Responsibilities and rollout | [Full proposal](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md) |
 +
-+*The community repository exists and is private; all community routes above require access. This profile update is still awaiting merge. Existing needs and project links remain available.*
++*The community repository is public; the community routes above are open to everyone. This profile update is still awaiting merge. Existing needs and project links remain available.*
 +
 +## Featured Project
 +
@@ -172,7 +172,7 @@ index 0000000..d782ade
 +| Open data | Rare disease database: patient-contributed, de-identified materials for research collaboration | In development |
 +| Capacity building | AI for rare disease learning program: knowledge bases, educational websites, comics, videos, and small tools | Running; 400+ learners |
 +
-+Browse the [existing organization repositories](https://github.com/orgs/OpenRDHub/repositories) or the [project-to-repository mapping](https://github.com/OpenRDHub/community/blob/main/docs/projects.en.md) (private repository; access required). Project descriptions and repository listings serve different purposes; verified relationships are documented in the mapping.
++Browse the [existing organization repositories](https://github.com/orgs/OpenRDHub/repositories) or the [project-to-repository mapping](https://github.com/OpenRDHub/community/blob/main/docs/projects.en.md). Project descriptions and repository listings serve different purposes; verified relationships are documented in the mapping.
 +
 +## How It Works
 +
@@ -225,7 +225,7 @@ index 0000000..d782ade
 +
 +The community's open materials support knowledge organization, patient support, research collaboration, and shared tools. They do not replace professional diagnosis or treatment advice.
 diff --git a/profile/README.md b/profile/README.md
-index e5efde4..39620ad 100644
+index e5efde4..c12cd00 100644
 --- a/profile/README.md
 +++ b/profile/README.md
 @@ -1,3 +1,5 @@
@@ -250,9 +250,9 @@ index e5efde4..39620ad 100644
  
  </div>
  
-+<p align="center"><a href="https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.md">公开参与说明</a> · <a href="https://github.com/OpenRDHub/community/blob/main/README.md">成员协作资料（需权限）</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">查阅社区资料（需权限）</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">资料归档与运营方案（需权限）</a></p>
++<p align="center"><a href="https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.md">公开参与说明</a> · <a href="https://github.com/OpenRDHub/community/blob/main/README.md">社区协作资料</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">查阅社区资料</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">资料归档与运营方案</a></p>
 +
-+<p><b>协作入口：</b>当前组织是 OpenRDHub；Khub-OpenRD/rare-disease-list 是个人账号下的既有需求入口，分拣安排待确认。OpenRare 上游贡献仍进入 OpenRare2026/OpenRare。community 已创建为 PRIVATE，外部访客需使用可访问的公开入口。<a href="https://github.com/OpenRDHub/community/blob/main/docs/routing.md">入口归属表（需权限）</a>。</p>
++<p><b>协作入口：</b>当前组织是 OpenRDHub；Khub-OpenRD/rare-disease-list 是个人账号下的既有需求入口，分拣安排待确认。OpenRare 上游贡献仍进入 OpenRare2026/OpenRare。community 已公开，可通过 Issues、PR 和 Discussions 参与社区协作。<a href="https://github.com/OpenRDHub/community/blob/main/docs/routing.md">入口归属表</a>。</p>
 +
  <h2 align="center">Who We Are</h2>
  
@@ -270,7 +270,7 @@ index e5efde4..39620ad 100644
    </tr>
 +  <tr>
 +    <td align="center"><b>想参与社区建设？</b></td>
-+    <td align="center">从 <a href="https://github.com/OpenRDHub/community/blob/main/docs/getting-started.md">community 参与指南（需权限）</a> 了解文档、资料整理、运营和社区协作的参与方式。</td>
++    <td align="center">从 <a href="https://github.com/OpenRDHub/community/blob/main/docs/getting-started.md">community 参与指南</a> 了解文档、资料整理、运营和社区协作的参与方式。</td>
 +  </tr>
    <tr>
      <td align="center"><b>想合作支持？</b></td>
@@ -284,7 +284,7 @@ index e5efde4..39620ad 100644
 +
 +<table><tr><th>我想了解</th><th>从这里进入</th></tr><tr><td>会议、讨论和资料最近有什么变化</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.md">社区资料中心</a></td></tr><tr><td>怎样整理一份记录并同步到 GitHub</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/record-policy.md">收录与维护约定</a></td></tr><tr><td>这套分工怎么运行、先做什么</td><td><a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.md">查看完整方案草稿</a></td></tr></table>
 +
-+<p><sub>community 已建立为私有仓库，以上资料入口均需访问权限；本主页更新稿尚待合入。原有需求入口与项目链接继续保留。</sub></p>
++<p><sub>community 已公开，以上资料入口可直接访问；本主页更新稿尚待合入。原有需求入口与项目链接继续保留。</sub></p>
 +
  <h2 align="center">Featured Project</h2>
  
@@ -293,7 +293,7 @@ index e5efde4..39620ad 100644
    </tr>
  </table>
  
-+<p>查看 <a href="https://github.com/orgs/OpenRDHub/repositories">组织现有仓库</a>，或查阅 <a href="https://github.com/OpenRDHub/community/blob/main/docs/projects.md">项目与仓库对应目录</a>（私有仓库，需访问权限）。项目介绍与仓库目录分别维护，已核验关系见对应说明。</p>
++<p>查看 <a href="https://github.com/orgs/OpenRDHub/repositories">组织现有仓库</a>，或查阅 <a href="https://github.com/OpenRDHub/community/blob/main/docs/projects.md">项目与仓库对应目录</a>。项目介绍与仓库目录分别维护，已核验关系见对应说明。</p>
 +
  <h2 align="center">How It Works</h2>
  

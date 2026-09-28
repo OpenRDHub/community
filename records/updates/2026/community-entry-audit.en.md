@@ -7,7 +7,7 @@ summary: Repair participation, needs and resource routes; clarify access and pre
 date: '2026-09-28'
 updated: '2026-09-28'
 status: pending-review
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -19,6 +19,8 @@ source_revision: community-entry-audit-2026-09-28-v1
 ---
 
 # Three-route audit and profile handoff
+
+> Follow-up (2026-09-28): community has been changed to PUBLIC under explicit user instruction. The findings below describe the earlier private state. Repository access requests are no longer needed; intake and review roles remain open. The linked profile patch now reflects public visibility; the board remains private.
 
 This is a deliverable for [C01 / Issue #3](https://github.com/OpenRDHub/community/issues/3). Codex performed the checks and edits under user authorization. Independent review and community intake roles remain unconfirmed.
 
@@ -36,7 +38,7 @@ The existing organization narrative, statistics, project descriptions, contribut
 
 The current public profile baseline is `b73f5a4387b390ccde3074b515add470a07a7b74`. Its README matches the saved baseline. The six-file patch contains Chinese and English profiles and public contribution guides, plus default task and PR templates.
 
-[Download the profile patch (community access required)](https://github.com/OpenRDHub/community/raw/refs/heads/main/handoff/organization-profile.patch)
+[Download the profile patch](https://github.com/OpenRDHub/community/raw/refs/heads/main/handoff/organization-profile.patch)
 
 An authorized maintainer can create a branch from the latest `.github` default branch and run:
 

@@ -7,7 +7,7 @@ summary: 原组织 README、黑客松 SOP、需求入口和协作平台的索引
 date: '2026-09-28'
 updated: '2026-09-28'
 status: draft
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -30,6 +30,6 @@ source_revision: local-draft-2026-09-28
 | 现有需求登记 | [rare-disease-list Issues](https://github.com/Khub-OpenRD/rare-disease-list/issues) | 暂时保留原入口，讨论迁移时给出明确去向 |
 | 社区协作平台 | [OpenRD-CollabPlat](https://github.com/OpenRDHub/OpenRD-CollabPlat) | 保留已有平台，资料网页的首版不依赖改造它 |
 
-[查看完整仓库目录与 README 项目对应说明](../projects.md)：列出本轮核验的 12 个真实仓库，并单独标记拟建的 community。
+[查看完整仓库目录与 README 项目对应说明](../projects.md)：列出本轮核验的 13 个公开仓库，包括已公开的 community。
 
 本条仅登记来源；没有复制这些仓库的全部内容，也没有把尚未提供的飞书文件标成已归档。

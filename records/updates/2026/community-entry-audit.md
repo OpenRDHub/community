@@ -7,7 +7,7 @@ summary: 补齐参与、需求和资源入口，修正访问说明，提供已�
 date: '2026-09-28'
 updated: '2026-09-28'
 status: pending-review
-visibility: internal
+visibility: public
 publication: pending
 authority: github
 example: false
@@ -19,6 +19,8 @@ source_revision: community-entry-audit-2026-09-28-v1
 ---
 
 # 三条参与路径检查与主页交接
+
+> 后续更新（2026-09-28）：用户已明确要求将 community 改为 PUBLIC，现已完成。下文保留公开前的检查结果；访问申请不再是参与前提，接待与评审仍待确认。链接中的主页修改包已同步公开状态；看板仍为私有。
 
 对应 [C01 / Issue #3](https://github.com/OpenRDHub/community/issues/3)。本记录由 Codex 根据用户授权完成，记录实际检查和修订；独立评审尚待确认，不代表已落实社区接待人。
 
@@ -38,7 +40,7 @@ source_revision: community-entry-audit-2026-09-28-v1
 
 当前公开主页基准提交：`b73f5a4387b390ccde3074b515add470a07a7b74`。线上 README 与本地修改包的基准文件一致。修改包包含中英文主页、公开贡献说明、默认任务与 PR 模板，共六个文件。
 
-[下载组织主页修改包（需 community 权限）](https://github.com/OpenRDHub/community/raw/refs/heads/main/handoff/organization-profile.patch)
+[下载组织主页修改包](https://github.com/OpenRDHub/community/raw/refs/heads/main/handoff/organization-profile.patch)
 
 ## 有写权限的维护者怎样应用
 

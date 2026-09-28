@@ -6,9 +6,9 @@
 
 ## 登记入口
 
-有 community 访问权限时，先[查找已有需求](https://github.com/OpenRDHub/community/issues)，再[使用需求模板登记](https://github.com/OpenRDHub/community/issues/new?template=need.md)。已有项目归属的，按[项目目录](projects.md)进入该项目；已有原 Issue 的只做关联，不重复登记。
+community 已公开。先[查找已有需求](https://github.com/OpenRDHub/community/issues)，再[使用需求模板登记](https://github.com/OpenRDHub/community/issues/new?template=need.md)。已有项目归属的，按[项目目录](projects.md)进入该项目；已有原 Issue 的只做关联，不重复登记。
 
-没有权限时，组织主页目前指向 [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues)。这是个人账号下的既有公开入口，是否继续统一接待及谁负责分拣尚待确认。登记前确认可见范围，不在公开页面填写原始病历或私人联系方式。
+原组织主页还保留指向 [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues)。这是个人账号下的既有公开入口，是否继续统一接待及谁负责分拣尚待确认。登记前确认可见范围，不在公开页面填写原始病历或私人联系方式。
 
 ## 可以先写这些
 
