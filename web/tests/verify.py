@@ -63,6 +63,12 @@ class RecordWorkflow(unittest.TestCase):
             self.assertIn('org-board.html',(site/'index.html').read_text())
             self.assertIn('board.html',(site/'community.html').read_text())
             self.assertIn('PULL_REQUEST_TEMPLATE.md',(site/'files.html').read_text())
+            for prefix in ('', 'en/'):
+                self.assertIn('https://github.com/orgs/OpenRDHub/projects/1',(site/(prefix+'board.html')).read_text())
+                self.assertIn('https://github.com/OpenRDHub/community/discussions/9',(site/(prefix+'discussions.html')).read_text())
+                self.assertNotIn('&topic=topic',(site/(prefix+'discussions.html')).read_text())
+                for n in range(1,7):
+                    self.assertIn(f'https://github.com/OpenRDHub/community/issues/{n+2}',(site/(prefix+f'c0{n}.html')).read_text())
             # A malformed new record must fail before replacing the prior output.
             original=(site/'index.html').read_bytes()
             (records/'invalid.md').write_text('# No metadata\n')

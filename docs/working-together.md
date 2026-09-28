@@ -28,3 +28,7 @@
 以上频次由实际承担者确认后启用。自动欢迎语不代替人工接待；没有人接手时，明确当前等待的条件。
 
 [协作规则](../GOVERNANCE.md) · [维护分工](../MAINTAINERS.md)
+
+## 已配置的看板
+
+[OpenRD 社区建设](https://github.com/orgs/OpenRDHub/projects/1)采用上述六个状态，目前六项任务均为待确认。可认领表示接待与评审已落实；待反馈表示已有交付等待复核；暂缓时在原 Issue 写清恢复条件。该看板只引用 community 原 Issue，不复制项目仓库任务。

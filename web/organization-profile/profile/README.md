@@ -178,7 +178,7 @@ Khub团队 成立于 2024 年，并于 2025 年 9 月发起 OpenRD 罕见病开�
   </tr>
 </table>
 
-<p>查看 <a href="https://github.com/orgs/OpenRDHub/repositories">组织现有仓库</a>，或查阅 <a href="https://github.com/OpenRDHub/community/blob/main/docs/projects.md">项目与仓库对应目录</a>（本地草稿）。项目介绍与仓库目录分别维护，已核验关系见对应说明。</p>
+<p>查看 <a href="https://github.com/orgs/OpenRDHub/repositories">组织现有仓库</a>，或查阅 <a href="https://github.com/OpenRDHub/community/blob/main/docs/projects.md">项目与仓库对应目录</a>（私有仓库，需访问权限）。项目介绍与仓库目录分别维护，已核验关系见对应说明。</p>
 
 <h2 align="center">How It Works</h2>
 

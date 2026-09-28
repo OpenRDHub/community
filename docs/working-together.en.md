@@ -28,3 +28,7 @@ Questions can start in Discussions; recurring questions can become an FAQ. File 
 Actual participants must agree to this rhythm. Automated greetings do not replace human intake. If nobody can take over, explain what is needed before work can continue.
 
 [Governance](../GOVERNANCE.en.md) · [Maintainers](../MAINTAINERS.en.md)
+
+## Configured board
+
+[OpenRD Community](https://github.com/orgs/OpenRDHub/projects/1) uses these six states. All six tasks are currently in Triage. Ready requires agreed support and review; Review means a submitted result awaits feedback; On hold requires a resumption condition on the original Issue. The board references community Issues without duplicating project tasks.

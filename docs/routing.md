@@ -12,8 +12,8 @@
 | 尚未归属项目的真实需求 | [Khub-OpenRD/rare-disease-list Issues](https://github.com/Khub-OpenRD/rare-disease-list/issues) | 依分拣结果进入项目 | 个人账号下的既有公开入口；是否继续作为统一需求池及谁分拣待确认 |
 | 明确属于项目的功能或问题 | [项目目录](projects.md)列出的对应入口 | 该项目仓库 | 以项目当前说明为准；不重复在 community 开同义任务 |
 | OpenRare 上游贡献 | [上游 Issues](https://github.com/OpenRare2026/OpenRare/issues) / [PR](https://github.com/OpenRare2026/OpenRare/pulls) | OpenRare2026/OpenRare | 公开上游；组织 fork 未开启 Issues |
-| 查看整个组织的工作 | [组织 Projects](https://github.com/orgs/OpenRDHub/projects) | 原 Issue/PR 仓库不变 | 尚未确认真实共享看板；本地组织视图为当前公开条目快照 |
-| 开放讨论 | [分类草案](discussions.md) | 文档修改发目标仓库 PR | 组织 Discussions 尚未配置；先确定源仓库和受众 |
+| 查看整个组织的工作 | [组织 Projects](https://github.com/orgs/OpenRDHub/projects) | 原 Issue/PR 仓库不变 | [私有社区看板](https://github.com/orgs/OpenRDHub/projects/1)已建；只管理 community 事项。本地组织视图仍为公开条目快照 |
+| 开放讨论 | [社区讨论区](discussions.md) | 文档修改发目标仓库 PR | community 仓库 Discussions 已启用且私有；组织级入口仍待确认源仓库和受众 |
 
 ## Issue 与 PR 怎样对应
 

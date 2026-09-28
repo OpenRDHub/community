@@ -25,3 +25,5 @@ Existing administrators must confirm organization administration arrangements. T
 - Necessary operating instructions and an actual person taking over.
 
 Record a single-maintainer situation honestly rather than inventing a backup. Entry points without a contact should state that clearly.
+
+Use the [trial discussion](https://github.com/OpenRDHub/community/discussions/9) to offer an area of responsibility, availability, support needs, and desired recognition. Express interest in a specific task on its original Issue.
