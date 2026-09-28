@@ -2,7 +2,15 @@
 
 # Find your first step
 
-You do not need organization membership or coding skills to start. Begin with something small that fits your experience.
+Begin with something small that fits your experience; coding skills are not required. This repository is private, so reading and contributing require repository access, but not necessarily organization membership.
+
+## Available entry points
+
+- With repository access: choose an [existing task](https://github.com/OpenRDHub/community/issues?q=is%3Aissue%20is%3Aopen%20label%3Acommunity-task) and express interest on that Issue, or [submit a new community improvement](https://github.com/OpenRDHub/community/issues/new?template=proposal.en.md).
+- For overall roles or support needs: use the [trial discussion](https://github.com/OpenRDHub/community/discussions/9). Keep task progress on the original Issue.
+- Without access: start with the [public organization profile](https://github.com/OpenRDHub). If you already know a community contact or are in its WeChat group, ask them to help reach a repository administrator. A shared public contact and access request route are not yet in place. A 404 may indicate missing private-repository access.
+
+Expressing interest does not assign a task. Agree on delivery and check-ins after support and review arrangements are confirmed.
 
 ## I want to help build the community
 

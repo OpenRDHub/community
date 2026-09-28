@@ -7,7 +7,7 @@ Verified on 2026-09-28. Choose the handling location by the work involved. A mai
 | Work | Entry / owner | PR destination | Access and handling |
 |---|---|---|---|
 | Organization profile | [OpenRDHub](https://github.com/OpenRDHub) / [.github](https://github.com/OpenRDHub/.github) | .github | Public; the current account has no write access. A patch is prepared for an authorized maintainer. |
-| Public guidance | [Proposed guide](https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.en.md) | .github | Not merged yet; use the existing profile, known group contact or project README for now. |
+| Public guidance | [Existing organization profile](https://github.com/OpenRDHub) | .github | Public guidance is not merged yet. Authorized readers can use the [community guide](../CONTRIBUTING.en.md). A shared public contact remains unconfirmed. |
 | Community guides, records, operations | [community content](../README.en.md) | community | Created PRIVATE; authorized readers only. External visitors need a public entry. Contacts remain unconfirmed. |
 | Needs without a project | [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues) | The selected project | Existing personal-account intake; continued ownership and triage remain to be confirmed. |
 | A known project's bug or feature | [Project directory](projects.en.md) | That project | Follow its guidance; do not duplicate tasks in community. |

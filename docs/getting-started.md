@@ -2,7 +2,15 @@
 
 # 找到适合你的第一步
 
-不必先加入组织，也不必先会写代码。你可以从自己熟悉的一小件事开始。
+不需要先会写代码，可以从自己熟悉的一小件事开始。community 当前为私有，阅读文档和提交事项需要仓库访问权限；不要求必须成为组织成员。
+
+## 现在可以从哪里参与
+
+- 已有仓库权限：在[六个建设事项](https://github.com/OpenRDHub/community/issues?q=is%3Aissue%20is%3Aopen%20label%3Acommunity-task)中选择一项，在原 Issue 留下参与意向；新的社区改进可[按模板提交](https://github.com/OpenRDHub/community/issues/new?template=proposal.md)。
+- 讨论整体分工或需要的支持：到[试行讨论](https://github.com/OpenRDHub/community/discussions/9)说明。任务进展仍回到原 Issue。
+- 没有仓库权限：先看[公开组织主页](https://github.com/OpenRDHub)。若已在社区微信群或认识联络人，可请其协助联系仓库管理员；统一公开接待人和申请入口尚未落实。页面显示 404 也可能是缺少私有仓库权限。
+
+表达参与意向不等于任务已分配；接待和评审确认后再约定交付与检查时间。
 
 ## 我想参与社区建设
 
