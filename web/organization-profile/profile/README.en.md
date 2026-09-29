@@ -1,4 +1,4 @@
-[简体中文](README.md) · **English**
+[简体中文](https://github.com/OpenRDHub/.github/blob/main/profile/README.md) · **English**
 
 <div align="center">
 <img width="112" src="https://avatars.githubusercontent.com/u/252578712?v=4" alt="K-Hub logo" />
@@ -8,6 +8,8 @@
 <p><a href="https://github.com/OpenRDHub">Khub-OpenRD</a> · <a href="https://github.com/OpenRare2026/OpenRare">OpenRare</a> · <a href="https://github.com/Khub-OpenRD/rare-disease-list/issues">Share a need</a></p>
 <p><a href="https://github.com/OpenRDHub/community/blob/main/README.en.md">Community work</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/README.en.md">Community library</a> · <a href="https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md">Records and operations proposal</a></p>
 </div>
+
+[Community Issues](https://github.com/OpenRDHub/community/issues) · [Changes and reviews](https://github.com/OpenRDHub/community/pulls) · [Discussions](https://github.com/orgs/OpenRDHub/discussions) · [Public community board](https://github.com/orgs/OpenRDHub/projects/1)
 
 ## Who We Are
 
@@ -36,7 +38,7 @@ We want people to keep building useful projects together. Patients can define th
 | Share a real need | Use the existing [needs issue tracker](https://github.com/Khub-OpenRD/rare-disease-list/issues). |
 | Join the work | Bring code, data, design, medical research, or communication skills to a project. |
 | Help build the community | Explore documentation, records, operations, and collaboration in the [participation guide](https://github.com/OpenRDHub/community/blob/main/docs/getting-started.en.md). |
-| Offer support | Support project incubation, infrastructure, hackathons, learning programs, data governance, or joint research. |
+| Offer support | Support project incubation, infrastructure, hackathons, learning programs, data governance, or joint research. See the [resource guide](https://github.com/OpenRDHub/community/blob/main/docs/resources.en.md) to offer or request support. |
 
 ## Community Materials and Working Records
 
@@ -48,7 +50,7 @@ Meeting notes, discussions, decisions, and new references should remain useful t
 | How to prepare and maintain a record | [Record policy](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/record-policy.en.md) |
 | Responsibilities and rollout | [Full proposal](https://github.com/OpenRDHub/community/blob/main/docs/knowledge/plan.en.md) |
 
-*The community repository is public; the community routes above are open to everyone. This profile update is still awaiting merge. Existing needs and project links remain available.*
+*The community repository and board are public. Organization Discussions and community share one forum. Existing needs and project links remain available.*
 
 ## Featured Project
 

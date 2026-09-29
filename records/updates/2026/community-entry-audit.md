@@ -18,6 +18,8 @@ source_url: https://github.com/OpenRDHub/community/issues/3
 source_revision: community-entry-audit-2026-09-28-v1
 ---
 
+> 状态更新（2026-09-29）：此前权限卡点已解除，组织主页已上线，看板已公开，组织 Discussions 已接入 community。下文保留当时检查结果，不再作为待执行清单。请看[最新完成记录](community-unblocked.md)。
+
 # 三条参与路径检查与主页交接
 
 > 后续更新（2026-09-28）：用户已明确要求将 community 改为 PUBLIC，现已完成。下文保留公开前的检查结果；访问申请不再是参与前提，接待与评审仍待确认。链接中的主页修改包已同步公开状态；看板仍为私有。

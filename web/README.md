@@ -1,6 +1,6 @@
 # 本地预览与维护
 
-文档主版本位于仓库根目录的 docs/、records/、templates/ 等目录；web/ 直接读取它们，不维护第二份 community 正文。organization-profile/ 是另一个仓库 .github 的待应用修改副本，需通过单独补丁提交。
+文档主版本位于仓库根目录的 docs/、records/、templates/ 等目录；web/ 直接读取它们，不维护第二份 community 正文。organization-profile/ 是 .github 已上线文件的预览快照（2026-09-29，PR #1）；主页主版本在 .github，修改合入后再同步此目录。handoff/ 中的旧补丁仅供历史追溯，不应重复应用。
 
 需要 Node.js 20+、Python 3.10+。在仓库根目录：
 

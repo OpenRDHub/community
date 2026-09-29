@@ -8,7 +8,7 @@ Begin with something small that fits your experience; coding skills are not requ
 
 - To contribute: choose an [existing task](https://github.com/OpenRDHub/community/issues?q=is%3Aissue%20is%3Aopen%20label%3Acommunity-task) and express interest on that Issue, or [submit a new community improvement](https://github.com/OpenRDHub/community/issues/new?template=proposal.en.md).
 - For overall roles or support needs: use the [trial discussion](https://github.com/OpenRDHub/community/discussions/9). Keep task progress on the original Issue.
-- New to GitHub: start with the [public organization profile](https://github.com/OpenRDHub) and this guide. An existing community contact or WeChat group can help prepare your introduction; a shared intake contact remains unconfirmed. The board is separately private, but its original Issues can be read publicly.
+- New to GitHub: start with the [public organization profile](https://github.com/OpenRDHub) and this guide. An existing community contact or WeChat group can help prepare your introduction; a shared intake contact remains unconfirmed. The board and original Issues are publicly readable; editing requires the relevant permissions.
 
 Expressing interest does not assign a task. Agree on delivery and check-ins after support and review arrangements are confirmed.
 

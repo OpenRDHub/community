@@ -38,7 +38,7 @@
 
 [贡献与成长](MEMBERSHIP.md) · [日常如何协作](docs/working-together.md)
 
-> community 及其 Issues、PR、Discussions 已公开；社区看板仍为私有。六个事项已登记，尚待确认接待与评审；角色和规则仍待社区讨论，不代表已经指派或通过。
+> community 及其 Issues、PR、Discussions、社区看板均已公开；组织 Discussions 与 community 共用同一讨论区。六个事项已登记，尚待确认接待与评审；角色和规则仍待社区讨论，不代表已经指派或通过。
 
 ## 过程资料也在这里维护
 

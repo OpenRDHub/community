@@ -2,18 +2,18 @@
 
 # Entry points and ownership
 
-Verified on 2026-09-28. Choose the handling location by the work involved. A maintainer is not an on-call contact until they agree.
+Verified on 2026-09-29. Choose the handling location by the work involved. A maintainer is not an on-call contact until they agree.
 
 | Work | Entry / owner | PR destination | Access and handling |
 |---|---|---|---|
-| Organization profile | [OpenRDHub](https://github.com/OpenRDHub) / [.github](https://github.com/OpenRDHub/.github) | .github | Public; the current account has no write access. A patch is prepared for an authorized maintainer. |
-| Public guidance | [Existing organization profile](https://github.com/OpenRDHub) | .github | Public guidance is not merged yet. Authorized readers can use the [community guide](../CONTRIBUTING.en.md). A shared public contact remains unconfirmed. |
+| Organization profile | [OpenRDHub](https://github.com/OpenRDHub) / [.github](https://github.com/OpenRDHub/.github) | .github | Public; [profile PR #1](https://github.com/OpenRDHub/.github/pull/1) is merged and mattheliu has admin access. |
+| Public guidance | [Existing organization profile](https://github.com/OpenRDHub) | .github | The [organization guide](https://github.com/OpenRDHub/.github/blob/main/CONTRIBUTING.en.md) is live; community changes follow the [community guide](../CONTRIBUTING.en.md). A shared public contact remains unconfirmed. |
 | Community guides, records, operations | [community content](../README.en.md) | community | Publicly readable; participate through Issues, PRs, or Discussions. Contacts remain unconfirmed. |
 | Needs without a project | [Khub-OpenRD/rare-disease-list](https://github.com/Khub-OpenRD/rare-disease-list/issues) | The selected project | Existing personal-account intake; continued ownership and triage remain to be confirmed. |
 | A known project's bug or feature | [Project directory](projects.en.md) | That project | Follow its guidance; do not duplicate tasks in community. |
 | OpenRare upstream work | [Upstream Issues](https://github.com/OpenRare2026/OpenRare/issues) / [PRs](https://github.com/OpenRare2026/OpenRare/pulls) | OpenRare2026/OpenRare | Public upstream; Issues are disabled in the organization fork. |
-| Organization-wide work | [Organization Projects](https://github.com/orgs/OpenRDHub/projects) | Original repositories | A [private community board](https://github.com/orgs/OpenRDHub/projects/1) now tracks community work. The local organization view remains a snapshot of public items. |
-| Open-ended discussion | [Repository discussions](discussions.en.md) | The document's repository | Repository Discussions is enabled and public. Organization Discussions is not configured. |
+| Organization-wide work | [Organization Projects](https://github.com/orgs/OpenRDHub/projects) | Original repositories | A [public community board](https://github.com/orgs/OpenRDHub/projects/1) now tracks community work. The local organization view remains a snapshot of public items. |
+| Open-ended discussion | [Repository discussions](discussions.en.md) | The document's repository | [Organization Discussions](https://github.com/orgs/OpenRDHub/discussions) and community share one public forum. |
 
 ## Relating Issues and PRs
 
