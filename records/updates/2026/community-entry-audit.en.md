@@ -18,6 +18,8 @@ source_url: https://github.com/OpenRDHub/community/issues/3
 source_revision: community-entry-audit-2026-09-28-v1
 ---
 
+> Update (2026-09-29): access blockers are resolved, the profile is live, the board is public, and organization Discussions uses community. The historical findings below are not a current to-do list. See the [completion record](community-unblocked.en.md).
+
 # Three-route audit and profile handoff
 
 > Follow-up (2026-09-28): community has been changed to PUBLIC under explicit user instruction. The findings below describe the earlier private state. Repository access requests are no longer needed; intake and review roles remain open. The linked profile patch now reflects public visibility; the board remains private.

@@ -38,7 +38,7 @@ Give specific feedback and record the result and credit according to the contrib
 
 [Contribution and growth](MEMBERSHIP.en.md) · [Everyday collaboration](docs/working-together.en.md)
 
-> The repository, Issues, PRs, and Discussions are public; the community board remains private. Six Issues are registered but support and reviewers remain unconfirmed. Roles and rules still require community agreement.
+> The repository, Issues, PRs, Discussions, and community board are public. Organization Discussions shares the community forum. Six Issues are registered but support and reviewers remain unconfirmed. Roles and rules still require community agreement.
 
 ## Keep working records here too
 

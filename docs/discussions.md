@@ -2,7 +2,7 @@
 
 # 社区讨论怎样安排
 
-[community Discussions](https://github.com/OpenRDHub/community/discussions) 已启用并随仓库公开，可阅读并在登录 GitHub 后参与讨论。组织级 Discussions 尚未配置；当前使用 community 仓库讨论区。
+[community Discussions](https://github.com/OpenRDHub/community/discussions) 已启用并随仓库公开，可阅读并在登录 GitHub 后参与讨论。[组织 Discussions](https://github.com/orgs/OpenRDHub/discussions) 已将 community 设为来源，两个入口展示同一组讨论，无需重复发帖。
 
 | GitHub 分类 | 用来讨论什么 | 何时转入任务 |
 |---|---|---|

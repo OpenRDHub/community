@@ -27,4 +27,4 @@ A newcomer knows where to start. A community task can be taken, reviewed, and re
 
 Project delivery is not a completion condition for this phase. Follow the [project intake guide](docs/projects.en.md) when project work resumes.
 
-[Private community board](https://github.com/orgs/OpenRDHub/projects/1) · [Roles and public access discussion](https://github.com/OpenRDHub/community/discussions/9)
+[Public community board](https://github.com/orgs/OpenRDHub/projects/1) · [Roles and public access discussion](https://github.com/OpenRDHub/community/discussions/9)

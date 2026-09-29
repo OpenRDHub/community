@@ -1,7 +1,7 @@
 {
   "community_created": true,
   "visibility": "public",
-  "profile_write_access": false,
+  "profile_write_access": true,
   "issue_url": "https://github.com/OpenRDHub/community/issues/1",
   "pr_url": "https://github.com/OpenRDHub/community/pull/2",
   "repository_url": "https://github.com/OpenRDHub/community",
@@ -9,13 +9,19 @@
   "issue_state": "closed",
   "merge_commit": "28a9a2eae730e16a71939a0bdbef307635c95788",
   "project_url": "https://github.com/orgs/OpenRDHub/projects/1",
-  "project_visibility": "private",
+  "project_visibility": "public",
   "discussions_enabled": true,
   "discussion_url": "https://github.com/OpenRDHub/community/discussions/9",
-  "verified_on": "2026-09-28",
+  "verified_on": "2026-09-29",
   "project_base_role": "write",
   "trial_pr_url": "https://github.com/OpenRDHub/community/pull/10",
   "trial_pr_state": "merged",
   "trial_merge_commit": "9d7027859801848ea3b307375a5cd905babf004f",
-  "visibility_changed_on": "2026-09-28"
+  "visibility_changed_on": "2026-09-28",
+  "organization_discussions_enabled": true,
+  "organization_discussions_url": "https://github.com/orgs/OpenRDHub/discussions",
+  "organization_discussions_source": "OpenRDHub/community",
+  "profile_pr_url": "https://github.com/OpenRDHub/.github/pull/1",
+  "profile_pr_state": "merged",
+  "project_visibility_changed_on": "2026-09-29"
 }

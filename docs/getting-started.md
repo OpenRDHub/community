@@ -8,7 +8,7 @@
 
 - 参与社区建设：在[六个建设事项](https://github.com/OpenRDHub/community/issues?q=is%3Aissue%20is%3Aopen%20label%3Acommunity-task)中选择一项，在原 Issue 留下参与意向；新的社区改进可[按模板提交](https://github.com/OpenRDHub/community/issues/new?template=proposal.md)。
 - 讨论整体分工或需要的支持：到[试行讨论](https://github.com/OpenRDHub/community/discussions/9)说明。任务进展仍回到原 Issue。
-- 不熟悉 GitHub：先看[公开组织主页](https://github.com/OpenRDHub)和本页说明；若已在社区微信群或认识联络人，可请其协助整理参与意向。统一接待人仍待确认。社区看板独立设为私有，不影响阅读原 Issue。
+- 不熟悉 GitHub：先看[公开组织主页](https://github.com/OpenRDHub)和本页说明；若已在社区微信群或认识联络人，可请其协助整理参与意向。统一接待人仍待确认。社区看板与原 Issue 均可公开阅读；编辑仍需相应权限。
 
 表达参与意向不等于任务已分配；接待和评审确认后再约定交付与检查时间。
 

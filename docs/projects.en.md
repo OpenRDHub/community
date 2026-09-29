@@ -40,7 +40,7 @@ Preserve the original project descriptions and order. A project, event, and repo
 
 ## Public community repository
 
-`OpenRDHub/community` was changed to PUBLIC on September 28, 2026 under explicit user instruction and is included in the 13 public repositories above. It holds public participation guides, working records, and shared operations. The community Project board remains private.
+`OpenRDHub/community` was changed to PUBLIC on September 28, 2026 under explicit user instruction and is included in the 13 public repositories above. It holds public participation guides, working records, and shared operations. The community Project board became public on September 29, 2026.
 
 ## Project coordination
 

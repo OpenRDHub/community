@@ -27,4 +27,4 @@
 
 项目推进不作为本轮完成条件。后续按[项目接入规则](docs/projects.md)另行安排。
 
-[私有社区看板](https://github.com/orgs/OpenRDHub/projects/1) · [分工与公开入口讨论](https://github.com/OpenRDHub/community/discussions/9)
+[公开社区看板](https://github.com/orgs/OpenRDHub/projects/1) · [分工与公开入口讨论](https://github.com/OpenRDHub/community/discussions/9)
