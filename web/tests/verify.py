@@ -13,6 +13,39 @@ class Links(HTMLParser):
         self.urls += [v for k, v in attrs if k in ('href', 'src') and v]
 
 class RecordWorkflow(unittest.TestCase):
+    def test_public_visibility_keeps_internal_originals_out_of_real_records(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            records = root / 'records/meetings'
+            examples = root / 'examples/records/meetings'
+            records.mkdir(parents=True)
+            examples.mkdir(parents=True)
+            template = (BASE.parent / 'templates/meeting.md').read_text()
+            _, front, _ = template.split('---', 2)
+            meta = dict(yaml.safe_load(front), id='VERIFY-PUBLIC', lang='zh',
+                        title='Visibility check', summary='Synthetic fixture',
+                        reviewer='Test reviewer', source='Test source', source_revision='test-v1')
+            secret = 'SYNTHETIC-PRIVATE-BODY-DO-NOT-LOG'
+
+            def write(path, **fields):
+                path.write_text('---\n' + yaml.safe_dump(dict(meta, **fields)) + '---\n' + secret)
+
+            def check():
+                return subprocess.run([sys.executable, str(BASE / 'check-public-records.py'), str(root)],
+                                      capture_output=True, text=True)
+
+            write(examples / 'demo.md', id='VERIFY-FIXTURE', example=True, visibility='internal')
+            self.assertEqual(check().returncode, 0)
+            for visibility in ('internal', 'restricted'):
+                for example in (False, True):
+                    write(records / 'meeting.md', example=example, visibility=visibility)
+                    result = check()
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertIn('records/meetings/meeting.md', result.stderr)
+                    self.assertNotIn(secret, result.stdout + result.stderr)
+            write(records / 'meeting.md', example=False, visibility='public')
+            self.assertEqual(check().returncode, 0)
+
     def test_ingest_languages_metadata_and_links(self):
         with tempfile.TemporaryDirectory() as temp:
             tmp = Path(temp); drafts = tmp/'drafts'

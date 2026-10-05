@@ -18,6 +18,8 @@ Submit file changes through a pull request linked to the relevant item. Explain 
 
 Review feedback should explain what is accepted, what needs work, and who takes the next step. Record the reason when a suggestion is not adopted.
 
+PRs run `Community checks` for record metadata, public visibility, the preview build and local links. Fix failing checks and resolve review conversations before merging; local commands are in `web/README.md`. Passing CI still requires human review of source permissions and personal information.
+
 ## Pausing or handing over
 
 Reduce the scope, extend the schedule, or arrange a handover if your availability changes. Leave your current materials, completed work, blockers, and next steps. Pausing does not erase credit for previous contributions.
