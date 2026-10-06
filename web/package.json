@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "test": "python3 tests/verify.py",
+    "test": "node tests/run.mjs",
     "start": "python3 -m http.server 5274 --bind 127.0.0.1 --directory site"
   },
   "engines": {"node": ">=20"},

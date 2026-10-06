@@ -46,8 +46,14 @@ for p in sorted(community.rglob('*.md')):
             if meta[key] not in allowed:
                 raise ValueError(f'{key}: expected one of {sorted(allowed)}')
         for key in ('date', 'updated'):
-            meta[key] = str(meta[key])
-            date.fromisoformat(meta[key])
+            value = str(meta[key])
+            if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', value):
+                raise ValueError(f'{key} must be a YYYY-MM-DD date')
+            try:
+                date.fromisoformat(value)
+            except ValueError:
+                raise ValueError(f'{key} must be a valid calendar date') from None
+            meta[key] = value
         if not isinstance(meta['example'], bool):
             raise ValueError('example must be true or false')
         if rel.parts[:2] == ('examples', 'records') and not meta['example']:
@@ -56,7 +62,13 @@ for p in sorted(community.rglob('*.md')):
             if key in meta and (not isinstance(meta[key], str) or not re.match(r'^https?://[^\s]+$', meta[key])):
                 raise ValueError(f'{key} must be an http(s) URL')
         records.append(dict(meta, source_path='community/' + rel.as_posix(), body=text[match.end():].strip()))
-    except (ValueError, yaml.YAMLError) as exc:
+    except yaml.YAMLError as exc:
+        mark = getattr(exc, 'problem_mark', None)
+        location = f' at line {mark.line + 2}, column {mark.column + 1}' if mark else ''
+        errors.append(f'{rel}: invalid YAML metadata{location}; source text omitted')
+    except UnicodeError:
+        errors.append(f'{rel}: record must use UTF-8 encoding; source text omitted')
+    except ValueError as exc:
         errors.append(f'{rel}: {exc}')
 seen = set()
 for r in records:

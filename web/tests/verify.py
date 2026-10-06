@@ -13,6 +13,45 @@ class Links(HTMLParser):
         self.urls += [v for k, v in attrs if k in ('href', 'src') and v]
 
 class RecordWorkflow(unittest.TestCase):
+    def test_invalid_metadata_does_not_echo_source_text(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            records = root / 'records'
+            records.mkdir()
+            file = records / 'invalid.md'
+            secret = 'SYNTHETIC-PRIVATE-METADATA-DO-NOT-LOG'
+            template = (BASE.parent / 'templates/meeting.md').read_text()
+            _, front, _ = template.split('---', 2)
+            meta = dict(yaml.safe_load(front), id='VERIFY-ERROR', title=secret,
+                        summary=secret, reviewer='Test reviewer', source=secret,
+                        source_revision='test-v1')
+            cases = ['---\nid: TEST\nsource: [' + secret + '\n---\n',
+                     '---\n' + yaml.safe_dump(dict(meta, date=secret)) + '---\n',
+                     '---\n' + yaml.safe_dump(dict(meta, updated='2026-02-30')) + '---\n']
+            for content in cases:
+                with self.subTest(content_type=cases.index(content)):
+                    file.write_text(content + secret)
+                    for command in ([sys.executable, str(BASE / 'check-public-records.py'), str(root)],
+                                    ['node', str(BASE / 'build.mjs')]):
+                        result = subprocess.run(command, capture_output=True, text=True,
+                            env=dict(os.environ, CONTENT_ROOT=str(root),
+                                     SITE_OUTPUT=str(root / 'site'), PYTHON=sys.executable))
+                        self.assertNotEqual(result.returncode, 0)
+                        self.assertIn('invalid.md', result.stderr)
+                        self.assertNotIn(secret, result.stdout + result.stderr)
+
+    def test_npm_test_uses_the_selected_python(self):
+        with tempfile.TemporaryDirectory() as temp:
+            interpreter = Path(temp) / 'python probe'
+            interpreter.write_text('#!' + sys.executable + '\n'
+                                   'import sys\nprint("SELECTED-PYTHON", sys.argv[1])\nsys.exit(7)\n')
+            interpreter.chmod(0o755)
+            result = subprocess.run(['npm', 'test'], cwd=BASE, capture_output=True, text=True,
+                                    env=dict(os.environ, PYTHON=str(interpreter)))
+            self.assertEqual(result.returncode, 7)
+            self.assertIn('SELECTED-PYTHON', result.stdout)
+            self.assertIn('verify.py', result.stdout)
+
     def test_public_visibility_keeps_internal_originals_out_of_real_records(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -52,7 +91,7 @@ class RecordWorkflow(unittest.TestCase):
             if (BASE/'drafts').is_dir():
                 shutil.copytree(BASE/'drafts', drafts)
             else:
-                shutil.copytree(BASE.parent, drafts/'community', ignore=shutil.ignore_patterns('.git','web'))
+                shutil.copytree(BASE.parent, drafts/'community', ignore=shutil.ignore_patterns('.git','web','.venv','__pycache__'))
                 shutil.copytree(BASE/'organization-profile', drafts/'.github')
             records = drafts/'community/records/meetings'
             records.mkdir(parents=True, exist_ok=True)
