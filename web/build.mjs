@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {libraryUI,recordIntro} from './knowledge.mjs';
 import {execFileSync} from 'node:child_process';
 import {marked} from 'marked';
+import {collectMaterials,encodePath,resolveContentLink} from './materials.mjs';
 const base=path.dirname(fileURLToPath(import.meta.url));
 const drafts=path.resolve(process.env.CONTENT_ROOT || (fs.existsSync(path.join(base,'drafts')) ? path.join(base,'drafts') : path.join(base,'..')));
 const splitLayout=fs.existsSync(path.join(drafts,'community'));
@@ -38,9 +39,14 @@ const defs=[
 ['roadmap.html','community/ROADMAP.md','roadmap','file'],...taskSource.map(t=>[`${t.id.toLowerCase()}.html`,t.source,t.id,'issue'])
 ];
 defs.push(['knowledge.html','community/docs/knowledge/README.md','libraryTitle','library'],...[...recordGroups.values()].map(group=>group.find(r=>r.lang==='zh')||group[0]).map(r=>[recordRoute(r),r.source_path,r.id,'record']),...['meeting','discussion','daily','decision'].map(k=>['template-'+k+'.html','community/templates/'+k+'.md','template'+k[0].toUpperCase()+k.slice(1),'file']));
+const materials=collectMaterials(communityRoot);
+const materialByPath=new Map(materials.documents.map(doc=>[doc.src,doc]));
+const attachmentSources=new Set(materials.attachments.map(asset=>asset.src));
+defs.push(...materials.documents.map(doc=>[doc.route,doc.src,doc.src,'material']));
 const extraFiles=['tasks.html','discussions.html','form.html','review.html','repositories.html','people.html','board.html','pulls.html','files.html','org-board.html','org-discussions.html'];
 const routes={};for(const [file,src,key,kind]of defs){
  if(kind==='record'){for(const r of recordGroups.get(key))routes[r.source_path]=(r.lang==='en'?'en/':'')+file;}
+ else if(kind==='material')routes[src]=file;
  else {routes[src]=file;routes[enSource(src)]='en/'+file;}
 }
 const svgPaths={
@@ -59,19 +65,18 @@ const svgPaths={
 const icon=(name,size=16)=>`<svg class="octicon" width="${size}" height="${size}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${svgPaths[name]||svgPaths.file}</svg>`;
 for(const locale of ['zh','en']){
  const selectedRecords=[...recordGroups.values()].map(g=>g.find(r=>r.lang===locale)||g[0]);
- const T={...ui[locale],...Object.fromEntries(selectedRecords.map(r=>[r.id,r.title]))},t=k=>{if(!(k in T))throw Error('Missing translation '+locale+':'+k);return T[k];};
+ const T={...ui[locale],...Object.fromEntries(materials.documents.map(doc=>[doc.src,doc.title])),...Object.fromEntries(selectedRecords.map(r=>[r.id,r.title]))},t=k=>{if(!(k in T))throw Error('Missing translation '+locale+':'+k);return T[k];};
  const prefix=locale==='en'?'../':'',dir=locale==='en'?path.join(site,'en'):site;fs.mkdirSync(dir,{recursive:true});
  const tasks=taskSource.map(x=>({...x,...(locale==='en'?x.en:{}),categoryKey:({'文档':'documentation','导航':'navigation','资料':'references','体验':'usability','运营':'operations'})[x.category]}));
  const records=selectedRecords.map(r=>({...r,route:recordRoute(r),translationFallback:r.lang!==locale}));
  const forms=JSON.parse(fs.readFileSync(path.join(base,locale==='en'?'forms-en.json':'forms.json'),'utf8'));
- const sourcePath=src=>recordByPath.has(src)?selectedRecords.find(r=>r.id===recordByPath.get(src)).source_path:locale==='en'?enSource(src):src;
- const localRoute=target=>path.posix.relative(locale==='en'?'en':'.',routes[target]);
- function render(md,src){return marked.parse(md.replace(/^---\n[\s\S]*?\n---\n/,''),{gfm:true}).replace(/href="([^"]+)"/g,(all,href)=>{
-  let target;const gh=href.match(/^https:\/\/github\.com\/OpenRDHub\/(community|\.github)\/blob\/main\/(.*)$/);
-  if(gh)target=gh[1]+'/'+gh[2];else if(!/^(https?:|mailto:|#)/.test(href))target=path.posix.normalize(path.posix.join(path.posix.dirname(src),href));
-  if(target&&routes[target])return `href="${localRoute(target)}"${gh?` data-github-url="${href}"`:""}`;
-  if(target)throw Error('Unknown local target '+src+' '+href);
-  return /^https?:/.test(href)?`${all} target="_blank" rel="noopener noreferrer"`:all;
+ const sourcePath=src=>materialByPath.has(src)?src:recordByPath.has(src)?selectedRecords.find(r=>r.id===recordByPath.get(src)).source_path:locale==='en'?enSource(src):src;
+ const localRoute=target=>materialByPath.has(target)?routes[target]:path.posix.relative(locale==='en'?'en':'.',routes[target]);
+ function render(md,src){return marked.parse(md.replace(/^---\n[\s\S]*?\n---\n/,''),{gfm:true}).replace(/(href|src)="([^"]+)"/g,(all,attr,href)=>{
+  const resolved=resolveContentLink(href,src,routes,attachmentSources);
+  if(resolved?.target)return `${attr}="${escape(localRoute(resolved.target)+resolved.suffix)}"${resolved.github?` data-github-url="${href}"`:""}`;
+  if(resolved?.asset)return `${attr}="${escape(prefix+'raw/'+encodePath(resolved.asset)+resolved.suffix)}"`;
+  return attr==='href'&&/^https?:/.test(href)?`${all} target="_blank" rel="noopener noreferrer"`:all;
  }).replace(/<table\b([^>]*)>/g,'<div class="table-scroll"><table$1>').replace(/<\/table>/g,'</table></div>');}
  const links=[['launch.html','launch'],['routing.html','routing'],['pilot.html','pilot'],['knowledge.html','libraryTitle'],['knowledge-plan.html','knowledgePlan'],['record-policy.html','recordPolicy'],['participate.html','participate'],['contributing.html','contribute'],['governance.html','governance'],['maintainers.html','maintainers'],['membership.html','membership'],['working.html','working'],['needs.html','needs'],['resources.html','resources'],['projects.html','directory'],['roadmap.html','roadmap']];
  const searchPages=[['index.html','orgHome'],['community.html','communityHome'],['tasks.html','allIssues'],['discussions.html','discussions'],['org-board.html','orgBoard'],['board.html','board'],['repositories.html','repositories'],...links].map(([href,key])=>({href,title:t(key)}));
@@ -92,7 +97,7 @@ for(const locale of ['zh','en']){
  const fileItems=[['knowledge','knowledge.html','recordsFolder',true],['templates','files.html?folder=records-templates','templatesDocs',true],['.github','files.html?folder=templates','templatesFolder',true],['docs','files.html?folder=docs','docsFolder',true],['tasks','files.html?folder=tasks','tasksFolder',true],['README.md','community.html','readme',false],['CONTRIBUTING.md','contributing.html','contribute',false],['GOVERNANCE.md','governance.html','governance',false],['MAINTAINERS.md','maintainers.html','maintainers',false],['MEMBERSHIP.md','membership.html','membership',false],['ROADMAP.md','roadmap.html','roadmap',false]];
  function fileTable(){return `<div class="repo-toolbar"><details class="branch-menu"><summary class="button">${icon('branch')}main${icon('chevron')}</summary><div class="menu-panel"><strong>${t('branch')}</strong><span>${icon('check')} main · ${t('draft')}</span></div></details><span class="branch-note">${t('localBranch')}</span><a href="files.html" class="button go-file">${t('fileSearch')}</a><details class="code-menu"><summary class="button primary">${icon('code')}${t('code')}${icon('chevron')}</summary><div class="menu-panel"><p>${t('cloneNote')}</p><a href="${prefix}assets/community-drafts.zip" download>${t('downloadZip')}</a></div></details></div><div class="file-list"><div class="latest-draft"><span class="small-avatar">K</span><strong>OpenRDHub</strong><span>${t('commitNote')}</span><small>${t('draft')}</small></div>${fileItems.map(([name,href,purpose,isdir])=>`<div class="file-row"><a href="${href}">${icon(isdir?'folder':'file')}<span>${locale==='en'&&!isdir?name.replace('.md','.en.md'):name}</span></a><span>${t(purpose)}</span><small>${t('localCopy')}</small></div>`).join('')}</div>`;}
  function mdPanel(src,md,{profile=false,compact=false,action=''}={}){
-  const raw=prefix+'raw/'+src;
+  const raw=prefix+'raw/'+encodePath(src);
   return `<section class="readme-panel ${profile?'profile-readme':''} ${compact?'compact':''}"><div class="readme-toolbar"><div class="readme-tabs"><button class="active" type="button" data-md-tab="preview" aria-pressed="true">${icon('repo')}${profile?(locale==='en'?'README.en.md':'README.md'):t('preview')}</button><button type="button" data-md-tab="source" aria-pressed="false">${t('source')}</button></div><div><a href="${raw}" class="raw-link" download>${t('download')}</a></div></div><article class="markdown" id="rendered-content">${render(md,src)}${action}</article><pre class="source-view" id="source-content" hidden><code>${escape(md)}</code></pre></section>`;
  }
  function fileSidebar(current){return `<aside class="file-sidebar"><div class="sidebar-heading">${icon('repo')}<strong>${t('files')}</strong></div><div class="branch-static">${icon('branch')}main</div><nav>${fileItems.map(([name,href,key,isdir])=>`<a href="${href}" ${href===current?'class="selected" aria-current="page"':''}>${icon(isdir?'folder':'file')}<span>${locale==='en'&&!isdir?name.replace('.md','.en.md'):name}</span></a>`).join('')}<div class="side-divider"></div>${links.map(([href,key])=>`<a href="${href}" ${href===current?'class="selected" aria-current="page"':''}>${icon('file')}<span>${t(key)}</span></a>`).join('')}</nav></aside>`;}
@@ -107,6 +112,7 @@ for(const locale of ['zh','en']){
    html=shell(file,title,content,{context:'org',active:'overview',className:'container'});
   }else if(kind==='library'){html=shell(file,title,libraryUI({t,records,icon,escape,render}),{className:'container library-container'});
   }else if(kind==='record'){const record=records.find(r=>r.source_path===src);html=shell(file,title,recordIntro({record,t,icon,escape})+mdPanel(src,md),{className:'container record-container'});
+  }else if(kind==='material'){html=shell(file,title,`<div class="file-breadcrumb"><a href="files.html">${t('files')}</a> / ${escape(src.replace('community/',''))}</div>${locale==='en'?'<p class="page-hint">Chinese original · English translation is not available.</p>':''}${mdPanel(src,md)}`,{className:'container record-container'});
   }else if(kind==='repo')html=shell(file,title,`<div class="repo-grid"><div>${fileTable()}${mdPanel(src,md)}</div>${about()}</div>`,{className:'container'});
   else if(kind==='issue'){
    const body=md.replace(/^.*\n\n/,'').replace(/^# .*\n\n/,'');
@@ -154,6 +160,7 @@ for(const locale of ['zh','en']){
 function copyMarkdown(root,dest){for(const ent of fs.readdirSync(root,{withFileTypes:true})){if(['web','node_modules','.git'].includes(ent.name))continue;const from=path.join(root,ent.name),to=path.join(dest,ent.name);if(ent.isDirectory())copyMarkdown(from,to);else if(/\.(md|ya?ml)$/.test(ent.name)){fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(from,to);}}}
 copyMarkdown(communityRoot,path.join(site,'raw','community'));
 copyMarkdown(splitLayout?path.join(drafts,'.github'):path.join(base,'organization-profile'),path.join(site,'raw','.github'));
+for(const asset of materials.attachments){const dest=path.join(site,'raw',asset.src);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.copyFileSync(asset.file,dest);}
 for(const name of ['style.css','app.js'])fs.copyFileSync(path.join(base,name),path.join(site,name));
 const manifest=JSON.stringify({pages:defs,extraFiles,routes,locales:['zh','en']},null,2);
 fs.writeFileSync(path.join(site,'page-manifest.json'),manifest);
@@ -167,9 +174,9 @@ root=Path(sys.argv[1]);archive=Path(sys.argv[2])
 archive.parent.mkdir(parents=True,exist_ok=True)
 with ZipFile(archive,'w',ZIP_DEFLATED) as z:
  for p in sorted(root.rglob('*')):
-  if p.is_file() and p.suffix in ('.md','.yml','.yaml') and not any(x in p.relative_to(root).parts for x in ('web','node_modules','.git')):
+  if p.is_file():
    z.write(p,Path('community')/p.relative_to(root))
-`,communityRoot,path.join(site,'assets/community-drafts.zip')]);
+`,path.join(site,'raw','community'),path.join(site,'assets/community-drafts.zip')]);
 const oldSite=targetSite+'.previous-'+process.pid;
 if(fs.existsSync(targetSite))fs.renameSync(targetSite,oldSite);
 try{fs.renameSync(site,targetSite);}catch(error){if(fs.existsSync(oldSite))fs.renameSync(oldSite,targetSite);throw error;}

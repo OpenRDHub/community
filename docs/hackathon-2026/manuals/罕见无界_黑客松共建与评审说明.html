@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>「罕见·无界」黑客松｜只看落地，不看炫技</title>
+<style>
+  :root{
+    --bg:#07101d;
+    --panel:#0e1a2b;
+    --panel2:#122238;
+    --line:#263a58;
+    --text:#f7f9fc;
+    --muted:#aab7ca;
+    --cyan:#64e7ff;
+    --green:#73e4aa;
+    --purple:#a890ff;
+    --orange:#ffb36d;
+    --red:#ff7f8c;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+    color:var(--text);
+    background:
+      radial-gradient(circle at 18% 3%,rgba(100,231,255,.12),transparent 28%),
+      radial-gradient(circle at 86% 8%,rgba(168,144,255,.12),transparent 30%),
+      linear-gradient(180deg,#07101d,#091525 48%,#07101d);
+    line-height:1.55;
+  }
+  .wrap{max-width:1120px;margin:auto;padding:28px 22px 70px}
+  .hero{padding:66px 0 46px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .eyebrow{
+    display:inline-block;padding:7px 12px;border-radius:999px;
+    border:1px solid rgba(100,231,255,.35);color:var(--cyan);
+    background:rgba(100,231,255,.07);font-weight:800;font-size:13px
+  }
+  h1{font-size:clamp(44px,7vw,82px);line-height:1.02;letter-spacing:-2px;margin:18px 0 18px}
+  .sub{font-size:20px;color:#d8e5f4;max-width:760px;margin:0}
+  .hero-line{
+    margin-top:24px;display:inline-block;padding:12px 16px;border-radius:12px;
+    background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);
+    font-weight:800;color:#fff
+  }
+  section{padding:48px 0 4px}
+  .kicker{font-size:13px;color:var(--cyan);font-weight:900;letter-spacing:.09em}
+  h2{font-size:31px;margin:7px 0 10px}
+  .desc{color:var(--muted);max-width:820px;margin:0 0 22px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{
+    background:linear-gradient(180deg,rgba(18,34,56,.94),rgba(13,25,42,.98));
+    border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px
+  }
+  .card h3{margin:0 0 10px;font-size:20px}
+  ul{margin:10px 0 0;padding-left:19px}
+  li{margin:9px 0;color:#dce6f3}
+  .yes{border-top:3px solid var(--green)}
+  .no{border-top:3px solid var(--red)}
+  .yes h3{color:var(--green)} .no h3{color:var(--red)}
+  .highlight{
+    margin-top:18px;padding:16px 18px;border-radius:14px;
+    border:1px solid rgba(100,231,255,.25);
+    background:linear-gradient(90deg,rgba(100,231,255,.08),rgba(168,144,255,.07));
+    font-size:18px;font-weight:900
+  }
+
+  .score-list{display:grid;gap:14px;margin-top:20px}
+  .score-row{
+    display:grid;grid-template-columns:120px 180px 1fr;gap:18px;align-items:center;
+    padding:18px 20px;border-radius:16px;background:rgba(16,30,50,.92);
+    border:1px solid rgba(255,255,255,.08)
+  }
+  .pct{font-size:38px;font-weight:950;letter-spacing:-1px}
+  .score-row:nth-child(1) .pct{color:var(--cyan)}
+  .score-row:nth-child(2) .pct{color:var(--orange)}
+  .score-row:nth-child(3) .pct{color:var(--purple)}
+  .score-row:nth-child(4) .pct{color:var(--green)}
+  .score-name{font-weight:900;font-size:19px}
+  .score-who{font-size:13px;color:var(--muted);margin-top:3px}
+  .score-what{color:#dce6f3}
+  .score-what b{color:#fff}
+
+  .need{
+    padding:26px;border-radius:18px;
+    background:linear-gradient(135deg,rgba(100,231,255,.08),rgba(168,144,255,.07));
+    border:1px solid rgba(100,231,255,.22)
+  }
+  .need .big{
+    font-size:25px;font-weight:950;margin:0 0 8px
+  }
+  .need p{color:#d9e6f3;margin:0}
+  .flow{display:flex;gap:10px;align-items:stretch;margin-top:20px;flex-wrap:wrap}
+  .step{
+    flex:1;min-width:190px;background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.08);padding:16px;border-radius:14px
+  }
+  .step b{display:block;color:var(--cyan);margin-bottom:5px}
+  .arrow{display:flex;align-items:center;color:#68809e;font-weight:900}
+
+  .role{position:relative}
+  .role .tag{
+    display:inline-block;padding:5px 9px;border-radius:999px;font-size:12px;font-weight:900;margin-bottom:11px
+  }
+  .r1 .tag{background:rgba(100,231,255,.12);color:var(--cyan)}
+  .r2 .tag{background:rgba(168,144,255,.12);color:#cfc3ff}
+  .r3{border:1px solid rgba(255,179,109,.35);box-shadow:0 0 0 1px rgba(255,179,109,.06) inset}
+  .r3 .tag{background:rgba(255,179,109,.14);color:var(--orange)}
+  .role p{color:var(--muted);margin:8px 0 0}
+  .role strong{color:#fff}
+  .venture{
+    margin-top:18px;padding:22px;border-radius:17px;
+    background:linear-gradient(90deg,rgba(255,179,109,.12),rgba(168,144,255,.10));
+    border:1px solid rgba(255,179,109,.28)
+  }
+  .venture .title{font-size:23px;font-weight:950;margin-bottom:8px}
+  .venture p{margin:0;color:#e6edf7}
+  .venture strong{color:var(--orange)}
+  .footer{margin-top:54px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:14px}
+  @media(max-width:820px){
+    .grid2,.grid3{grid-template-columns:1fr}
+    .score-row{grid-template-columns:90px 1fr}
+    .score-what{grid-column:1/-1}
+    .arrow{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">罕见 · 无界 Hackathon</div>
+    <h1>只看落地，<br>不看炫技</h1>
+    <p class="sub">真正重要的，不是做了多少功能，而是有没有把真实需求做对、做出来，并且值得继续做下去。</p>
+    <div class="hero-line">真实需求 × 有效方案 × 长期共建</div>
+  </header>
+
+  <section>
+    <div class="kicker">01 / WHAT MATTERS</div>
+    <h2>比赛看重什么，不看重什么</h2>
+    <div class="grid2">
+      <div class="card yes">
+        <h3>我们看重</h3>
+        <ul>
+          <li>是否真正理解患者的真实需求</li>
+          <li>是否解决了最关键的问题</li>
+          <li>核心功能是否真的能用、能验证</li>
+          <li>是否主动与患者沟通，并根据反馈迭代</li>
+          <li>是否留下可继续共建、继续落地的成果</li>
+        </ul>
+      </div>
+      <div class="card no">
+        <h3>我们不看重</h3>
+        <ul>
+          <li>功能是不是最多</li>
+          <li>技术是不是最复杂、最“AI”</li>
+          <li>Demo是不是最炫</li>
+          <li>PPT和路演是不是最漂亮</li>
+          <li>48小时内是不是已经做成完整产品</li>
+        </ul>
+      </div>
+    </div>
+    <div class="highlight">先把真实问题做对，再证明这个方案真的值得继续。</div>
+  </section>
+
+<section>
+    <div class="kicker">02 / REQUIREMENT</div>
+    <h2>统一需求书，是起点，不是答案</h2>
+    <div class="need">
+      <div class="big">强烈建议：多和患者沟通，主动确认需求。</div>
+      <p>需求书帮助大家获得统一背景，但不能替代真实交流。不要只看文档闭门开发，也不要把“你要什么功能”直接丢给患者。</p>
+
+      <div class="flow">
+        <div class="step"><b>01 看需求书</b>先理解问题和场景</div>
+        <div class="arrow">→</div>
+        <div class="step"><b>02 找患者确认</b>确认自己有没有理解偏</div>
+        <div class="arrow">→</div>
+        <div class="step"><b>03 做方案</b>赛手发挥专业能力</div>
+        <div class="arrow">→</div>
+        <div class="step"><b>04 回到患者</b>体验、验证、再迭代</div>
+      </div>
+    </div>
+  </section>
+
+<section>
+    <div class="kicker">03 / ROLES</div>
+    <h2>三方角色：谁负责什么</h2>
+    <div class="grid3">
+      <div class="card role r1">
+        <div class="tag">需求发起者</div>
+        <h3>讲清楚问题</h3>
+        <p>提供真实场景、核心痛点与反馈，帮助判断方案有没有真正解决问题。</p>
+        <p><strong>不负责：</strong>提前设计完整产品，也不需要替赛手想好所有功能。</p>
+      </div>
+
+      <div class="card role r2">
+        <div class="tag">赛手</div>
+        <h3>把问题变成方案</h3>
+        <p>主动理解需求，提出产品与技术方案，快速验证，并根据患者反馈迭代。</p>
+        <p><strong>不应该：</strong>把产品定义完全丢回给患者。</p>
+      </div>
+
+      <div class="card role r3">
+        <div class="tag">主办方</div>
+        <h3>支持赛事，也筛选未来</h3>
+        <p>我们不仅提供规则、资源和协作支持，也会持续观察团队、方案与共建过程。</p>
+        <p><strong>核心角色：</strong>更像早期项目筛选者——寻找值得继续投入资源的优秀团队和优秀方案。</p>
+      </div>
+    </div>
+
+    <div class="venture">
+      <div class="title">比赛结束，不代表筛选结束。</div>
+      <p>
+        主办方认可的优秀项目，才有机会进入后续资源支持与持续共建；
+        其中表现突出的项目，<strong>才有可能进一步获得「200亿小姐姐」的支持。</strong>
+      </p>
+    </div>
+  </section>
+
+<section>
+    <div class="kicker">04 / SCORING</div>
+    <h2>评分标准</h2>
+    <p class="desc">每一类分数，只回答一个核心问题。</p>
+
+    <div class="score-list">
+      <div class="score-row">
+        <div class="pct">45%</div>
+        <div>
+          <div class="score-name">功能分</div>
+          <div class="score-who">8位赛题发起人</div>
+        </div>
+        <div class="score-what"><b>有没有把需求做对？</b><br>核心需求是否被回应，功能是否真正可用、可验证。</div>
+      </div>
+
+      <div class="score-row">
+        <div class="pct">35%</div>
+        <div>
+          <div class="score-name">协作分</div>
+          <div class="score-who">主办方 + 200亿小姐姐</div>
+        </div>
+        <div class="score-what"><b>这个团队和值不值得继续一起做？</b><br>看共建质量、反馈迭代、开源沉淀，以及赛后继续推进的可能。</div>
+      </div>
+
+      <div class="score-row">
+        <div class="pct">15%</div>
+        <div>
+          <div class="score-name">技术分</div>
+          <div class="score-who">专业评委</div>
+        </div>
+        <div class="score-what"><b>方案在技术上是否站得住？</b><br>看技术路线、实现质量、创新性与后续扩展空间。</div>
+      </div>
+
+      <div class="score-row">
+        <div class="pct">5%</div>
+        <div>
+          <div class="score-name">种草分</div>
+          <div class="score-who">现场患者</div>
+        </div>
+        <div class="score-what"><b>患者会不会真的想用？</b><br>看真实体验后的使用意愿与直观价值感。</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    「罕见·无界」黑客松｜只看落地，不看炫技
+  </div>
+</div>
+</body>
+</html>

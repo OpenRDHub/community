@@ -3,6 +3,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 import json, os, shutil, subprocess, sys, tempfile, unittest, yaml
+from zipfile import ZipFile
 
 BASE = Path(__file__).resolve().parents[1]
 
@@ -95,6 +96,12 @@ class RecordWorkflow(unittest.TestCase):
                 shutil.copytree(BASE/'organization-profile', drafts/'.github')
             records = drafts/'community/records/meetings'
             records.mkdir(parents=True, exist_ok=True)
+            archive = drafts/'community/docs/hackathon-2026/verification'
+            archive.mkdir(parents=True, exist_ok=True)
+            (archive/'中文 #1.md').write_text('# Archive document\n\n[PDF](sample%20%231.pdf)\n\n![Image](sample%20%231.png)\n')
+            (archive/'README.md').write_text('# Archive index\n\n[Document](%E4%B8%AD%E6%96%87%20%231.md)\n')
+            (archive/'sample #1.pdf').write_bytes(b'%PDF-1.4\n% test attachment\n')
+            (archive/'sample #1.png').write_bytes(b'\x89PNG\r\n\x1a\n')
             template = (drafts/'community/templates/meeting.md').read_text()
             _, front, body = template.split('---', 2)
             meta = yaml.safe_load(front)
@@ -105,6 +112,9 @@ class RecordWorkflow(unittest.TestCase):
                            reviewer='Confirmed test reviewer', source='Test source',
                            source_revision='test-v2', status='reviewed')
                 (records/f'only-{lang}.md').write_text('---\n'+yaml.safe_dump(row,allow_unicode=True)+'---\n'+body)
+            (records/'archive-reference.md').write_text(
+                '---\n'+yaml.safe_dump(dict(row, id='TEST-ARCHIVE', lang='zh'))+'---\n'
+                '[Archive directory](../../docs/hackathon-2026/verification/)\n')
             parsed = subprocess.run([sys.executable, str(BASE/'read-records.py'), str(drafts)],capture_output=True,text=True)
             self.assertEqual(parsed.returncode,0,parsed.stderr)
             indexed=json.loads(parsed.stdout)
@@ -114,6 +124,16 @@ class RecordWorkflow(unittest.TestCase):
             env=dict(os.environ,CONTENT_ROOT=str(drafts),SITE_OUTPUT=str(site),PYTHON=sys.executable)
             built=subprocess.run(['node',str(BASE/'build.mjs')],env=env,capture_output=True,text=True)
             self.assertEqual(built.returncode,0,built.stderr)
+            routes = json.loads((site/'page-manifest.json').read_text())['routes']
+            route = routes['community/docs/hackathon-2026/verification/中文 #1.md']
+            for prefix in ('', 'en/'):
+                page = (site/(prefix+route)).read_text()
+                self.assertIn('sample%20%231.pdf', page)
+                self.assertIn('sample%20%231.png', page)
+                self.assertIn('%E4%B8%AD%E6%96%87%20%231.md', page)
+            self.assertIn('Chinese original', (site/'en'/route).read_text())
+            with ZipFile(site/'assets/community-drafts.zip') as zipped:
+                self.assertEqual(zipped.read('community/docs/hackathon-2026/verification/sample #1.pdf'), b'%PDF-1.4\n% test attachment\n')
             zh_fallback=(site/'record-verify-en.html').read_text()
             en_fallback=(site/'en/record-verify-zh.html').read_text()
             self.assertIn('英文原文',zh_fallback)
