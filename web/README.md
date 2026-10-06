@@ -36,4 +36,6 @@ PYTHON=../.venv/bin/python npm --prefix web run build
 
 检查使用只读 GitHub 权限和临时构建目录；不上传网页、文档 ZIP 或记录正文，不配置飞书 Token，也不自动部署网站。新增资料仍需在 PR 中说明来源与公开范围，由资料负责人复核。需登录的飞书链接不做外链存活检查。
 
+YAML 或日期元信息错误只报告文件位置和修正要求，不在日志中回显原文。测试和构建均使用 `PYTHON` 指定的解释器，未指定时使用 `python3`。
+
 main 合并规则使用 `Community checks` 作为必需检查，要求分支与 main 同步并解决评审对话。维护者可在仓库 Settings → Branches 查看规则；首次贡献者的 fork 工作流仍遵循 GitHub 的运行审批设置。
